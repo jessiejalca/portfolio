@@ -14,7 +14,7 @@ This is my personal developer portfolio. My goal here is to showcase and put to 
   - [Useful resources](#useful-resources)
   - [Author](#author)
 
-![](./screenshot.jpg)
+<!-- ![](./screenshot.jpg) -->
 
 ## Built with
 
@@ -34,14 +34,16 @@ To see how you can add code snippets, see below:
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
+
 ```css
 .proud-of-this-css {
   color: papayawhip;
 }
 ```
+
 ```js
 const proudOfThisFunc = () => {
-  console.log('🎉')
+  console.log("🎉")
 }
 ```
 

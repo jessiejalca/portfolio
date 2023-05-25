@@ -1,12 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useState } from "react"
+import reactLogo from "./assets/react.svg"
+import "./App.css"
+import AnimatedCursor from "react-animated-cursor"
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={35}
+        innerScale={1}
+        outerScale={2}
+        outerAlpha={0}
+        hasBlendMode={true}
+        innerStyle={{
+          backgroundColor: "teal",
+        }}
+        outerStyle={{
+          border: "1px solid teal",
+        }}
+      />
+
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
