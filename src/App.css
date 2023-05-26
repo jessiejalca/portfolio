@@ -1,41 +1,27 @@
-#root {
-  max-width: 1280px;
+main {
+  max-width: 50rem;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 5rem 3rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+/* Navigation Bar */
+nav {
+  padding: 2em 2em 1.5em;
+  border-bottom: 1px solid #ebebeb;
+  display: flex;
+  justify-content: space-between;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+nav a {
+  color: #6e6e6e;
+  text-decoration: none;
+  font-size: 0.9rem;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu > a {
+  margin-left: 1.5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* Hero */
+.hero > h1 {
+  font-weight: 800;
+  font-size: 3.5rem;
 }

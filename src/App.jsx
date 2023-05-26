@@ -1,7 +1,7 @@
 import { useState } from "react"
-import reactLogo from "./assets/react.svg"
 import "./App.css"
 import AnimatedCursor from "react-animated-cursor"
+import NavBar from "./components/NavBar"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,39 +10,27 @@ function App() {
     <div className="App">
       <AnimatedCursor
         innerSize={8}
-        outerSize={35}
+        outerSize={60}
         innerScale={1}
-        outerScale={2}
+        outerScale={1.6}
         outerAlpha={0}
         hasBlendMode={true}
+        showSystemCursor={true}
         innerStyle={{
-          backgroundColor: "teal",
+          backgroundColor: "#46B1C9",
         }}
         outerStyle={{
-          border: "1px solid teal",
+          border: "1px solid #46B1C9",
+          backgroundColor: "#46B1C91A",
         }}
       />
-
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <NavBar />
+      <main>
+        <div className="hero">
+          <h1>I'm Jessie Jalca</h1>
+          <p></p>
+        </div>
+      </main>
     </div>
   )
 }
