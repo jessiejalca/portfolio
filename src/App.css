@@ -3,10 +3,13 @@ main {
   margin: 0 auto;
   padding: 5rem 3rem;
 }
+a {
+  padding: 0.4em 0;
+}
 
 /* Navigation Bar */
 nav {
-  padding: 2em 2em 1.5em;
+  padding: 2em 2em 0.8em;
   border-bottom: 1px solid #ebebeb;
   display: flex;
   justify-content: space-between;
@@ -14,14 +17,49 @@ nav {
 nav a {
   color: #6e6e6e;
   text-decoration: none;
-  font-size: 0.9rem;
 }
 .menu > a {
-  margin-left: 1.5em;
+  margin-left: 1.8em;
+  position: relative;
+  font-size: 0.8em;
+}
+.menu > a:hover {
+  color: #202c39;
+  border-bottom: #202c39 solid 1.5px;
 }
 
 /* Hero */
+.hero {
+  display: grid;
+  gap: 1.5em;
+}
 .hero > h1 {
   font-weight: 800;
   font-size: 3.5rem;
+}
+.actionBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.actionBtn > svg {
+  margin-left: 0.8em;
+  animation-name: bounce;
+  animation-duration: 1.16s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(1.2em);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.actionBtn:hover > p {
+  border-bottom: #202c39 solid 1.5px;
 }
