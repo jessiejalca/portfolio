@@ -6,8 +6,10 @@ const Hero = () => {
       <div className="hero">
         <h1>I'm Jessie Jalca</h1>
         <p>
-          Frontend developer, JavaScript engineer, UX/UI advocate, language
-          learner, practicing minimalist, occasional photographer.
+          Frontend developer, JavaScript engineer, UX/UI advocate, practicing
+          minimalist, hobbyist language learner, occasional photographer,
+          unapologetic sci-fi reader, and indie rock fan,{" "}
+          <em>at your service</em>.
         </p>
         <a className="actionBtn">
           <p>See what I can do</p>
