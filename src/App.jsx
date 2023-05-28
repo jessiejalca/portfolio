@@ -8,9 +8,9 @@ function App() {
     <div className="App">
       <AnimatedCursor
         innerSize={8}
-        outerSize={60}
+        outerSize={40}
         innerScale={1}
-        outerScale={1.6}
+        outerScale={2.8}
         outerAlpha={0}
         hasBlendMode={true}
         innerStyle={{
