@@ -1,4 +1,4 @@
-main {
+.box {
   max-width: 50rem;
   margin: 0 auto;
   padding: 5rem 3rem;
@@ -6,6 +6,10 @@ main {
 a {
   padding: 0.4em 0;
   text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
 }
 
 /* Navigation Bar */
@@ -18,12 +22,10 @@ nav {
 .menu > a {
   color: #6e6e6e;
   margin-left: 1.8em;
-  position: relative;
   font-size: 0.8em;
 }
 .menu > a:hover {
   color: #202c39;
-  border-bottom: #202c39 solid 1.5px;
 }
 
 /* Hero */
@@ -63,6 +65,28 @@ nav {
     transform: translateX(0);
   }
 }
-.actionBtn:hover > p {
-  border-bottom: #202c39 solid 1.5px;
+
+/* Footer */
+footer {
+  margin-top: 2em;
+}
+footer ul {
+  display: grid;
+  grid-template-columns: repeat(2, 32px);
+  grid-template-rows: 32px;
+  align-items: center;
+  gap: 1em;
+  /* Get rid of default list styles */
+  list-style-type: none;
+  padding-left: 0;
+}
+footer li {
+  grid-row: 1;
+  padding: 0;
+}
+footer img {
+  height: 18px;
+}
+footer a:hover > img {
+  height: 20px;
 }

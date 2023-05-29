@@ -2,6 +2,7 @@ import "./App.css"
 import AnimatedCursor from "react-animated-cursor"
 import NavBar from "./components/NavBar"
 import Hero from "./components/Hero"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -22,7 +23,10 @@ function App() {
         }}
       />
       <NavBar />
-      <Hero />
+      <div className="box">
+        <Hero />
+        <Footer />
+      </div>
     </div>
   )
 }
