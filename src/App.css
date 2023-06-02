@@ -4,6 +4,7 @@
   padding: 5rem 3rem;
 }
 a {
+  color: #202c39;
   padding: 0.4em 0;
   text-decoration: none;
   cursor: pointer;
@@ -20,12 +21,12 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-.menu > a {
+.menu .link {
   color: #6e6e6e;
   margin-left: 1.8em;
   font-size: 0.8em;
 }
-.menu > a:hover {
+.menu .link:hover {
   color: #202c39;
 }
 

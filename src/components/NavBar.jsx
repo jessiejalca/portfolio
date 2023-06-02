@@ -1,12 +1,22 @@
+import { Link } from "react-router-dom"
+
 const NavBar = () => {
   return (
     <nav role="navigation" className="navigation">
-      <a href="#">Logo</a>
+      <Link to={"/"}>Logo</Link>
       <div className="menu">
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Resume</a>
-        <a href="#">Contact</a>
+        <Link className="link" to="/about">
+          About
+        </Link>
+        <Link className="link" to={"/projects"}>
+          Projects
+        </Link>
+        <Link className="link" to={"/resume"}>
+          Resume
+        </Link>
+        <Link className="link" to={"/contact"}>
+          Contact
+        </Link>
       </div>
     </nav>
   )

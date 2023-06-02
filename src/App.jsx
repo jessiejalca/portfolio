@@ -1,7 +1,8 @@
-import "./App.css"
 import AnimatedCursor from "react-animated-cursor"
+import { Outlet } from "react-router-dom"
 import NavBar from "./components/NavBar"
-import Home from "./routes/Home"
+import Footer from "./components/Footer"
+import "./App.css"
 
 function App() {
   return (
@@ -10,10 +11,9 @@ function App() {
         innerSize={8}
         outerSize={68}
         innerScale={1.8}
-        outerScale={0.3}
+        outerScale={0.22}
         outerAlpha={0}
         hasBlendMode={true}
-        // showSystemCursor={true}
         innerStyle={{
           backgroundColor: "#46B1C9",
         }}
@@ -24,7 +24,8 @@ function App() {
       />
       <NavBar />
       <div className="box">
-        <Home />
+        <Outlet />
+        <Footer />
       </div>
     </div>
   )

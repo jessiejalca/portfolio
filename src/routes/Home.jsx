@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom"
 import rightArrow from "../assets/right-arrow.svg"
 
-const Hero = () => {
+const Home = () => {
   return (
     <main>
       <div className="hero">
@@ -11,13 +12,13 @@ const Hero = () => {
           unapologetic sci-fi reader, and indie rock fan,{" "}
           <em>at your service</em>.
         </p>
-        <a className="actionBtn">
+        <Link className="actionBtn" to={"/projects"}>
           <p>See what I can do</p>
           <img src={rightArrow} />
-        </a>
+        </Link>
       </div>
     </main>
   )
 }
 
-export default Hero
+export default Home
