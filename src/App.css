@@ -1,11 +1,12 @@
 .box {
-  max-width: 50rem;
+  max-width: 48rem;
   margin: 0 auto;
   padding: 5rem 3rem;
 }
 a {
   padding: 0.4em 0;
   text-decoration: none;
+  cursor: pointer;
 }
 a:hover {
   text-decoration: underline;
@@ -86,7 +87,4 @@ footer li {
 }
 footer img {
   height: 18px;
-}
-footer a:hover > img {
-  height: 20px;
 }
