@@ -14,7 +14,7 @@ const NavBar = () => {
         <Link className="link" to={"/resume"}>
           Resume
         </Link>
-        <Link className="link" to={"/contact"}>
+        <Link className="link" to={"mailto: jessiejalca@gmail.com"}>
           Contact
         </Link>
       </div>
