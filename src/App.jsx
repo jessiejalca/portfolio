@@ -21,12 +21,11 @@ function App() {
           border: "1px solid #46B1C9",
           backgroundColor: "#46B1C91A",
         }}
+        showSystemCursor={true}
       />
       <NavBar />
-      <div className="box">
-        <Outlet />
-        <Footer />
-      </div>
+      <Outlet />
+      <Footer />
     </div>
   )
 }

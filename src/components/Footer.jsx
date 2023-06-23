@@ -3,7 +3,7 @@ import linkedinLogo from "../assets/linkedin.svg"
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="box">
       <ul>
         <li>
           <a href="https://github.com/jessiejalca" target="_blank">
