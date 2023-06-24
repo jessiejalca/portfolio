@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <main>
-      <h2>About Me</h2>
+      <h2>About Me.</h2>
       <p className="sub">
         In short, I'm a graphic-designer-turned-developer. These days, I like
         spending my free time building whatever cool thing pops into my mind.
@@ -14,8 +14,9 @@ const About = () => {
         I've been working towards ever since.
       </p>
       <p>
-        When I'm not coding, I'm usually either delving deep into a good story
-        or trying to make good stories with friends and family.
+        I'm what they call an ambivert. So when I'm not coding, I'm usually
+        either delving deep into a good story or trying to make good stories
+        with friends, family, coworkers and the occasional stranger.
       </p>
       <h3></h3>
     </main>
