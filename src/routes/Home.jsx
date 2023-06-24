@@ -8,9 +8,8 @@ const Home = () => {
         <h1>I'm Jessie Jalca</h1>
         <p>
           Frontend developer, JavaScript engineer, UX/UI advocate, practicing
-          minimalist, hobbyist language learner, occasional photographer,
-          unapologetic sci-fi reader, and indie rock fan,{" "}
-          <em>at your service</em>.
+          minimalist, hobbyist language learner, occasional photographer, sci-fi
+          and fantasy reader, and indie rock fan, <em>at your service</em>.
         </p>
         <Link className="actionBtn" to={"/projects"}>
           <p>See what I can do</p>

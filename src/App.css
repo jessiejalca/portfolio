@@ -22,6 +22,9 @@ h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
+p {
+  margin-bottom: 1rem;
+}
 .sub {
   font-size: 1.3rem;
   font-weight: 600;
@@ -48,6 +51,9 @@ header {
 .hero {
   display: grid;
   gap: 1.5em;
+}
+.hero > p {
+  margin-bottom: 0;
 }
 .hero em {
   font-weight: 800;
