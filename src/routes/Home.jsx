@@ -7,7 +7,7 @@ const Home = () => {
       <div className="hero">
         <h1>I'm Jessie Jalca.</h1>
         <p>
-          Frontend developer, JavaScript engineer, UX advocate, practicing
+          Frontend developer, JavaScript engineer, user advocate, practicing
           minimalist, hobbyist language learner, occasional photographer, serial
           reader, and multi-genre music listener, <em>at your service</em>.
         </p>
