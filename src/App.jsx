@@ -1,10 +1,19 @@
+import { useEffect } from "react"
 import AnimatedCursor from "react-animated-cursor"
-import { Outlet } from "react-router-dom"
+import { Outlet, useLocation } from "react-router-dom"
+import { useAnimate, animate } from "framer-motion"
 import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
 import "./App.css"
 
 function App() {
+  const location = useLocation()
+  const [scope, animate] = useAnimate()
+
+  useEffect(() => {
+    animate(scope.current, { opacity: 0, opacity: 1 }, { duration: 1 })
+  }, [location])
+
   return (
     <div className="App">
       <AnimatedCursor
@@ -24,7 +33,9 @@ function App() {
         showSystemCursor={true}
       />
       <NavBar />
-      <Outlet />
+      <div ref={scope}>
+        <Outlet />
+      </div>
       <Footer />
     </div>
   )
