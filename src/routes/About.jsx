@@ -14,8 +14,10 @@ const About = () => {
         I've been working towards ever since.
       </p>
       <p>
-        When I'm not coding, I'm usually either delving deep into a good story
-        or living out good stories with my friends and family.
+        When I'm not coding, I'm probably reading, binging whatever sitcom I'm
+        currently obsessed with, or playing soccer. My favorite thing to do is
+        to dive deep into a good story or live out a good story with my friends
+        and family.
       </p>
       <h3></h3>
     </main>
