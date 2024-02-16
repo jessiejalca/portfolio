@@ -7,9 +7,9 @@ const Home = () => {
       <div className="hero">
         <h1>I'm Jessie Jalca.</h1>
         <p>
-          Frontend developer, JavaScript engineer, user advocate, practicing
-          minimalist, hobbyist language learner, amateur footballer, serial
-          reader, and multi-genre music listener, <em>at your service</em>.
+          Frontend developer, JavaScript engineer, user advocate, amateur
+          footballer, hobbyist language learner, serial reader, and multi-genre
+          music listener, <em>at your service</em>.
         </p>
         <Link className="actionBtn" to={"/projects"}>
           <p>See what I can do</p>
