@@ -6,6 +6,21 @@ import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
 import "./App.css"
 
+/* 
+TASKS
+- Make site responsive
+- Add a dark mode toggle
+  - Make dark mode persistent with local storage
+  - Make dark mode default if user has dark mode enabled in their OS
+- Toggle changes
+  - Turn off cursor animation on mobile
+  - Consider making toggle for all animations
+  - Make toggle setting persistent with local storage
+- Add projects
+- Add a logo
+- Add page transitions
+*/
+
 function App() {
   const location = useLocation()
   const [scope, animate] = useAnimate()
