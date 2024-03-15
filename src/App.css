@@ -43,12 +43,6 @@ header {
   align-items: center;
   gap: 1em;
 }
-.cursor-toggle {
-  height: 1.2em;
-}
-.cursor-toggle-off {
-  filter: invert(0.5);
-}
 .menu .link {
   color: #6e6e6e;
   font-size: 0.8em;
