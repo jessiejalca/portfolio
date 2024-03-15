@@ -38,9 +38,19 @@ header {
   display: flex;
   justify-content: space-between;
 }
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.cursor-toggle {
+  height: 1.2em;
+}
+.cursor-toggle-off {
+  filter: invert(0.5);
+}
 .menu .link {
   color: #6e6e6e;
-  margin-left: 1.8em;
   font-size: 0.8em;
 }
 .menu .link:hover {
@@ -104,4 +114,56 @@ footer li {
 }
 footer img {
   height: 18px;
+}
+
+/* Toggle */
+.toggle-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 1.5rem;
+}
+.toggle {
+  height: 16px;
+  width: 32px;
+  border-radius: 8px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+.toggleOn {
+  background-color: #46b1c9;
+}
+.switch {
+  height: 100%;
+  width: 12px;
+  border-radius: 50%;
+  background-color: white;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-name: switchOn;
+  animation-direction: normal;
+  animation-play-state: running;
+  transition: transform 0.3s ease;
+}
+.switchOn {
+  animation-name: switchOn;
+}
+.switchOff {
+  animation-name: switchOn;
+  animation-direction: reverse;
+}
+@keyframes switchOn {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(16px);
+  }
+}
+.toggle-box label {
+  font-size: 0.8em;
+  color: #6e6e6e;
 }

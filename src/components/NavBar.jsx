@@ -1,11 +1,19 @@
 import { Link } from "react-router-dom"
+import Toggle from "./Toggle"
 
-const NavBar = () => {
+const NavBar = (props) => {
   return (
     <header>
       <Link to={"/"}>Logo</Link>
       <nav role="navigation">
         <div className="menu">
+          {/* Add a toggle switch to turn the animated cursor on and off */}
+          <div className="toggle-box">
+            <Toggle isChecked={props.cursorStatus} onToggle={props.setCursor} />
+            <label htmlFor="toggle" className="toggleLabel">
+              Animate Cursor
+            </label>
+          </div>
           <Link className="link" to={"/"}>
             Home
           </Link>
