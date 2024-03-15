@@ -117,6 +117,10 @@ footer img {
   gap: 8px;
   margin: 0 1.5rem;
 }
+.toggle-box label {
+  font-size: 0.8em;
+  color: #6e6e6e;
+}
 .toggle {
   height: 16px;
   width: 32px;
@@ -137,7 +141,6 @@ footer img {
   animation-duration: 0.3s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
-  animation-name: switchOn;
   animation-direction: normal;
   animation-play-state: running;
   transition: transform 0.3s ease;
@@ -146,8 +149,7 @@ footer img {
   animation-name: switchOn;
 }
 .switchOff {
-  animation-name: switchOn;
-  animation-direction: reverse;
+  animation-name: switchOff;
 }
 @keyframes switchOn {
   0% {
@@ -157,7 +159,11 @@ footer img {
     transform: translateX(16px);
   }
 }
-.toggle-box label {
-  font-size: 0.8em;
-  color: #6e6e6e;
+@keyframes switchOff {
+  0% {
+    transform: translateX(16px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
