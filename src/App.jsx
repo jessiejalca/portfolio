@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import AnimatedCursor from "react-animated-cursor"
 import { Outlet, useLocation } from "react-router-dom"
-import { useAnimate } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
 import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
 import "./App.css"
@@ -9,7 +9,6 @@ import "./App.css"
 /* 
 TASKS
 - Make site responsive
-- Make dark mode default if user has dark mode enabled in their OS
 - Toggle changes
   - Turn off cursor animation on mobile
   - Consider making toggle for all animations
@@ -19,7 +18,6 @@ TASKS
 
 function App() {
   const location = useLocation()
-  const [scope, animate] = useAnimate()
   const [showCursor, setShowCursor] = useState(
     localStorage.getItem("showCursor") === "true" // Get the initial state from localStorage
   )
@@ -29,10 +27,6 @@ function App() {
       ? true
       : localStorage.getItem("darkMode") === "true" // Get the initial state from localStorage
   )
-
-  useEffect(() => {
-    animate(scope.current, { opacity: 0, opacity: 1 }, { duration: 1 })
-  }, [location])
 
   useEffect(() => {
     document.body.classList.toggle("dark-mode", darkMode)
@@ -80,10 +74,16 @@ function App() {
         darkMode={darkMode}
         setDarkMode={handleDarkMode}
       />
-      <div ref={scope}>
-        <Outlet context={[darkMode, setDarkMode]} />
-      </div>
-      <Footer darkMode={darkMode} />
+      <AnimatePresence>
+        <motion.div
+          key={location.pathname}
+          initial={{ y: 25, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, type: "spring" }}>
+          <Outlet context={[darkMode, setDarkMode]} />
+          <Footer darkMode={darkMode} />
+        </motion.div>
+      </AnimatePresence>
     </div>
   )
 }
