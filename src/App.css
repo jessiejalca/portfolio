@@ -1,3 +1,18 @@
+/* Variables */
+:root {
+  --primary-bg-color: #ebebeb;
+  --primary-text-color: #202c39;
+  --accent-blue: #46b1c9;
+  --accent-gray: #8d9499;
+  --toggle-color: #fff;
+}
+.dark-mode {
+  --primary-bg-color: #202c39;
+  --primary-text-color: #ebebeb;
+  --toggle-color: #000;
+}
+
+/* General Styles */
 main,
 footer {
   max-width: 48rem;
@@ -5,7 +20,7 @@ footer {
   padding: 5rem 3rem 3rem;
 }
 a {
-  color: #202c39;
+  color: var(--primary-text-color);
   padding: 0.4em 0;
   text-decoration: none;
   cursor: pointer;
@@ -34,7 +49,7 @@ p {
 /* Navigation Bar */
 header {
   padding: 1em 2em 0.2em;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid var(--primary-bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,18 +62,18 @@ header .logo {
   align-items: center;
   gap: 1.1em;
   font-weight: 500;
-  color: #8d9499;
+  color: var(--accent-gray);
 }
 .menu .link {
-  color: #8d9499;
+  color: var(--accent-gray);
   font-size: 0.8em;
 }
 .menu .link:hover {
-  color: #202c39;
+  color: var(--primary-text-color);
   text-decoration: none;
 }
 .menu a.active {
-  color: #202c39;
+  color: var(--primary-text-color);
   text-decoration: underline;
   text-underline-offset: 0.5rem;
 }
@@ -131,25 +146,25 @@ footer img {
 }
 .toggle-box label {
   font-size: 0.8em;
-  color: #8d9499;
+  color: var(--accent-gray);
 }
 .toggle {
   height: 16px;
   width: 32px;
   border-radius: 8px;
-  background-color: #8d9499;
+  background-color: var(--accent-gray);
   display: flex;
   align-items: center;
   padding: 2px;
 }
 .toggleOn {
-  background-color: #46b1c9;
+  background-color: var(--accent-blue);
 }
 .switch {
   height: 100%;
   width: 12px;
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--toggle-color);
   animation-duration: 0.3s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
