@@ -1,6 +1,6 @@
 function Toggle({ name, isChecked, onToggle }) {
   return (
-    <div onClick={onToggle} className="toggle-box prevent-select">
+    <button onClick={onToggle} className="toggle-box prevent-select">
       <div
         className={`toggle ${isChecked ? "toggleOn" : ""}`}
         onClick={onToggle}>
@@ -9,7 +9,7 @@ function Toggle({ name, isChecked, onToggle }) {
       <label htmlFor="toggle" className="toggleLabel">
         {name}
       </label>
-    </div>
+    </button>
   )
 }
 

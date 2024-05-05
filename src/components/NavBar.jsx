@@ -37,7 +37,9 @@ const NavBar = (props) => {
           isChecked={props.cursorStatus}
           onToggle={props.setCursor}
         />
-        <div className="toggle-box prevent-select" onClick={props.setDarkMode}>
+        <button
+          className="toggle-box prevent-select"
+          onClick={props.setDarkMode}>
           <img
             src={props.darkMode ? darkModeToggleDark : darkModeToggle}
             alt="Dark mode toggle"
@@ -46,7 +48,7 @@ const NavBar = (props) => {
           <label htmlFor="dark-mode-toggle" className="toggleLabel">
             Lights {props.darkMode ? "On" : "Off"}
           </label>
-        </div>
+        </button>
       </div>
     </header>
   )

@@ -104,6 +104,11 @@ nav a.active {
   align-items: center;
   padding: 0 1.5rem;
 }
+button.toggle-box {
+  border: none;
+  background-color: transparent;
+  color: var(--accent-gray);
+}
 .toggle-box {
   display: flex;
   align-items: center;
