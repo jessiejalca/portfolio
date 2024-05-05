@@ -15,16 +15,16 @@ TASKS
 - Toggle changes
   - Turn off cursor animation on mobile
   - Consider making toggle for all animations
-  - Make toggle setting persistent with local storage
 - Add projects
 - Add page transitions
-- Style selected link in navbar
 */
 
 function App() {
   const location = useLocation()
   const [scope, animate] = useAnimate()
-  const [showCursor, setShowCursor] = useState(true)
+  const [showCursor, setShowCursor] = useState(
+    localStorage.getItem("showCursor") === "true" // Get the initial state from localStorage
+  )
 
   useEffect(() => {
     animate(scope.current, { opacity: 0, opacity: 1 }, { duration: 1 })
@@ -32,7 +32,9 @@ function App() {
 
   // Toggle the animated cursor on and off
   const handleToggle = () => {
-    setShowCursor(!showCursor)
+    const newShowCursor = !showCursor
+    setShowCursor(newShowCursor)
+    localStorage.setItem("showCursor", newShowCursor) // Save the new state to localStorage
   }
 
   return (
