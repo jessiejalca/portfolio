@@ -45,14 +45,22 @@ header .logo {
 .menu {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 1.1em;
+  font-weight: 500;
+  color: #8d9499;
 }
 .menu .link {
-  color: #6e6e6e;
+  color: #8d9499;
   font-size: 0.8em;
 }
 .menu .link:hover {
   color: #202c39;
+  text-decoration: none;
+}
+.menu a.active {
+  color: #202c39;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
 }
 
 /* Hero */
@@ -123,13 +131,13 @@ footer img {
 }
 .toggle-box label {
   font-size: 0.8em;
-  color: #6e6e6e;
+  color: #8d9499;
 }
 .toggle {
   height: 16px;
   width: 32px;
   border-radius: 8px;
-  background-color: gray;
+  background-color: #8d9499;
   display: flex;
   align-items: center;
   padding: 2px;

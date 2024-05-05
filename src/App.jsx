@@ -17,8 +17,8 @@ TASKS
   - Consider making toggle for all animations
   - Make toggle setting persistent with local storage
 - Add projects
-- Add a logo
 - Add page transitions
+- Style selected link in navbar
 */
 
 function App() {

@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import Toggle from "./Toggle"
 import logo from "../assets/logo.png"
 
 const NavBar = (props) => {
   return (
     <header>
-      <Link to={"/"}>
+      <NavLink to={"/"}>
         <img src={logo} alt="Jessie's logo" className="logo" />
-      </Link>
+      </NavLink>
       <nav role="navigation">
         <div className="menu">
           <div className="toggle-box">
@@ -16,18 +16,18 @@ const NavBar = (props) => {
               Animate Cursor
             </label>
           </div>
-          <Link className="link" to={"/"}>
+          <NavLink className="link" to={"/"}>
             Home
-          </Link>
-          <Link className="link" to={"/projects"}>
+          </NavLink>
+          <NavLink className="link" to={"/projects"}>
             Projects
-          </Link>
-          <Link className="link" to={"/about"}>
+          </NavLink>
+          <NavLink className="link" to={"/about"}>
             About
-          </Link>
-          <Link className="link" to={"mailto: jessiejalca@gmail.com"}>
+          </NavLink>
+          <NavLink className="link" to={"mailto: jessiejalca@gmail.com"}>
             Contact
-          </Link>
+          </NavLink>
         </div>
       </nav>
     </header>
