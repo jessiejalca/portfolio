@@ -16,6 +16,11 @@
   --accent-gray: #b8bbbd;
   --toggle-color: var(--primary-bg-color);
 }
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
 
 /* General Styles */
 body {
@@ -99,6 +104,14 @@ nav a.active {
   align-items: center;
   padding: 0 1.5rem;
 }
+.toggle-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.toggle-box:hover {
+  color: var(--primary-text-color);
+}
 .dark-mode-toggle {
   width: 24px;
 }
@@ -163,14 +176,6 @@ footer img {
 }
 
 /* --- Toggle */
-.toggle-box {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.toggle-box:hover {
-  color: var(--primary-text-color);
-}
 .toggle {
   height: 16px;
   width: 32px;

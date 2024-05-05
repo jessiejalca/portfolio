@@ -9,9 +9,7 @@ import "./App.css"
 /* 
 TASKS
 - Make site responsive
-- Add a dark mode toggle
-  - Make dark mode persistent with local storage
-  - Make dark mode default if user has dark mode enabled in their OS
+- Make dark mode default if user has dark mode enabled in their OS
 - Toggle changes
   - Turn off cursor animation on mobile
   - Consider making toggle for all animations
