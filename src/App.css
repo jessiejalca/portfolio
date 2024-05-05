@@ -61,29 +61,46 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 0.8em;
+  color: var(--accent-gray);
 }
 header .logo {
   width: 120px;
 }
 .menu {
   display: flex;
+  gap: 1.5em;
+  font-weight: 500;
+}
+nav {
+  display: flex;
   align-items: center;
   gap: 1.1em;
   font-weight: 500;
+  /* margin-left: 3em; */
   color: var(--accent-gray);
 }
-.menu .link {
+nav .link {
   color: var(--accent-gray);
-  font-size: 0.8em;
 }
-.menu .link:hover {
+nav .link:hover {
   color: var(--primary-text-color);
   text-decoration: none;
 }
-.menu a.active {
+nav a.active {
   color: var(--primary-text-color);
   text-decoration: underline;
   text-underline-offset: 0.5rem;
+}
+.settings {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+.dark-mode-toggle {
+  width: 24px;
 }
 
 /* Hero */
@@ -145,16 +162,11 @@ footer img {
   height: 18px;
 }
 
-/* Toggle */
+/* --- Toggle */
 .toggle-box {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin: 0 1.5rem;
-}
-.toggle-box label {
-  font-size: 0.8em;
-  color: var(--accent-gray);
 }
 .toggle {
   height: 16px;

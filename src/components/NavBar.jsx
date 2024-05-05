@@ -2,25 +2,21 @@ import { NavLink } from "react-router-dom"
 import Toggle from "./Toggle"
 import logo from "../assets/logo.svg"
 import logoDark from "../assets/dm-logo.svg"
+import darkModeToggle from "../assets/dark-mode.svg"
+import darkModeToggleDark from "../assets/dm-dark-mode.svg"
 
 const NavBar = (props) => {
   return (
     <header>
-      <NavLink to={"/"}>
-        <img
-          src={props.darkMode ? logoDark : logo}
-          alt="Jessie's logo"
-          className="logo"
-        />
-      </NavLink>
-      <nav role="navigation">
-        <div className="menu">
-          <div className="toggle-box">
-            <Toggle isChecked={props.cursorStatus} onToggle={props.setCursor} />
-            <label htmlFor="toggle" className="toggleLabel">
-              Animate Cursor
-            </label>
-          </div>
+      <div className="menu">
+        <NavLink to={"/"}>
+          <img
+            src={props.darkMode ? logoDark : logo}
+            alt="Jessie's logo"
+            className="logo"
+          />
+        </NavLink>
+        <nav role="navigation">
           <NavLink className="link" to={"/"}>
             Home
           </NavLink>
@@ -33,8 +29,27 @@ const NavBar = (props) => {
           <NavLink className="link" to={"mailto: jessiejalca@gmail.com"}>
             Contact
           </NavLink>
+        </nav>
+      </div>
+      <div className="settings">
+        <div className="toggle-box">
+          <Toggle isChecked={props.cursorStatus} onToggle={props.setCursor} />
+          <label htmlFor="toggle" className="toggleLabel">
+            Animate Cursor
+          </label>
         </div>
-      </nav>
+        <div className="toggle-box">
+          <img
+            src={props.darkMode ? darkModeToggleDark : darkModeToggle}
+            alt="Dark mode toggle"
+            className="dark-mode-toggle"
+            onClick={props.setDarkMode}
+          />
+          <label htmlFor="dark-mode-toggle" className="toggleLabel">
+            Lights {props.darkMode ? "On" : "Off"}
+          </label>
+        </div>
+      </div>
     </header>
   )
 }

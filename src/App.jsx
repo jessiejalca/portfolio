@@ -25,7 +25,9 @@ function App() {
   const [showCursor, setShowCursor] = useState(
     localStorage.getItem("showCursor") === "true" // Get the initial state from localStorage
   )
-  const [darkMode, setDarkMode] = useState(true)
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("darkMode") === "true" // Get the initial state from localStorage
+  )
 
   useEffect(() => {
     animate(scope.current, { opacity: 0, opacity: 1 }, { duration: 1 })
@@ -71,7 +73,12 @@ function App() {
       ) : (
         ""
       )}
-      <NavBar setCursor={handleToggle} cursorStatus={showCursor} darkMode />
+      <NavBar
+        setCursor={handleToggle}
+        cursorStatus={showCursor}
+        darkMode
+        setDarkMode={handleDarkMode}
+      />
       <div ref={scope}>
         <Outlet context={[darkMode, setDarkMode]} />
       </div>
