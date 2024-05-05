@@ -38,12 +38,11 @@ const NavBar = (props) => {
             Animate Cursor
           </label>
         </div>
-        <div className="toggle-box">
+        <div className="toggle-box" onClick={props.setDarkMode}>
           <img
             src={props.darkMode ? darkModeToggleDark : darkModeToggle}
             alt="Dark mode toggle"
             className="dark-mode-toggle"
-            onClick={props.setDarkMode}
           />
           <label htmlFor="dark-mode-toggle" className="toggleLabel">
             Lights {props.darkMode ? "On" : "Off"}

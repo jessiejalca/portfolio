@@ -12,6 +12,7 @@
 .dark-mode {
   --primary-bg-color: #202c39;
   --primary-text-color: #fbfbfb;
+  --secondary-bg-color: #2c3e50;
   --accent-gray: #b8bbbd;
   --toggle-color: var(--primary-bg-color);
 }
@@ -77,7 +78,6 @@ nav {
   align-items: center;
   gap: 1.1em;
   font-weight: 500;
-  /* margin-left: 3em; */
   color: var(--accent-gray);
 }
 nav .link {
@@ -94,7 +94,7 @@ nav a.active {
 }
 .settings {
   display: flex;
-  gap: 16px;
+  gap: 32px;
   justify-content: space-between;
   align-items: center;
   padding: 0 1.5rem;
@@ -167,6 +167,9 @@ footer img {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+.toggle-box:hover {
+  color: var(--primary-text-color);
 }
 .toggle {
   height: 16px;

@@ -76,13 +76,13 @@ function App() {
       <NavBar
         setCursor={handleToggle}
         cursorStatus={showCursor}
-        darkMode
+        darkMode={darkMode}
         setDarkMode={handleDarkMode}
       />
       <div ref={scope}>
         <Outlet context={[darkMode, setDarkMode]} />
       </div>
-      <Footer darkMode />
+      <Footer darkMode={darkMode} />
     </div>
   )
 }
