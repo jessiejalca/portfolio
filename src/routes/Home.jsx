@@ -1,7 +1,10 @@
-import { Link } from "react-router-dom"
+import { Link, useOutletContext } from "react-router-dom"
 import rightArrow from "../assets/right-arrow.svg"
+import rightArrowDark from "../assets/dm-right-arrow.svg"
 
 const Home = () => {
+  const [darkMode, setDarkMode] = useOutletContext()
+
   return (
     <main>
       <div className="hero">
@@ -13,7 +16,7 @@ const Home = () => {
         </p>
         <Link className="actionBtn" to={"/projects"}>
           <p>See what I can do</p>
-          <img src={rightArrow} />
+          <img src={darkMode ? rightArrowDark : rightArrow} />
         </Link>
       </div>
     </main>

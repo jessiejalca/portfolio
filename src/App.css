@@ -1,18 +1,26 @@
 /* Variables */
 :root {
-  --primary-bg-color: #ebebeb;
   --primary-text-color: #202c39;
+  --primary-bg-color: #fbfbfb;
+  --secondary-bg-color: #ebebeb;
   --accent-blue: #46b1c9;
   --accent-gray: #8d9499;
   --toggle-color: #fff;
+
+  color-scheme: light dark;
 }
 .dark-mode {
   --primary-bg-color: #202c39;
-  --primary-text-color: #ebebeb;
-  --toggle-color: #000;
+  --primary-text-color: #fbfbfb;
+  --accent-gray: #b8bbbd;
+  --toggle-color: var(--primary-bg-color);
 }
 
 /* General Styles */
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+}
 main,
 footer {
   max-width: 48rem;
@@ -49,7 +57,7 @@ p {
 /* Navigation Bar */
 header {
   padding: 1em 2em 0.2em;
-  border-bottom: 1px solid var(--primary-bg-color);
+  border-bottom: 1px solid var(--secondary-bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;

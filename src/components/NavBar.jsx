@@ -1,12 +1,17 @@
 import { NavLink } from "react-router-dom"
 import Toggle from "./Toggle"
-import logo from "../assets/logo.png"
+import logo from "../assets/logo.svg"
+import logoDark from "../assets/dm-logo.svg"
 
 const NavBar = (props) => {
   return (
     <header>
       <NavLink to={"/"}>
-        <img src={logo} alt="Jessie's logo" className="logo" />
+        <img
+          src={props.darkMode ? logoDark : logo}
+          alt="Jessie's logo"
+          className="logo"
+        />
       </NavLink>
       <nav role="navigation">
         <div className="menu">

@@ -25,16 +25,28 @@ function App() {
   const [showCursor, setShowCursor] = useState(
     localStorage.getItem("showCursor") === "true" // Get the initial state from localStorage
   )
+  const [darkMode, setDarkMode] = useState(true)
 
   useEffect(() => {
     animate(scope.current, { opacity: 0, opacity: 1 }, { duration: 1 })
   }, [location])
+
+  useEffect(() => {
+    document.body.classList.toggle("dark-mode", darkMode)
+  }, [darkMode])
 
   // Toggle the animated cursor on and off
   const handleToggle = () => {
     const newShowCursor = !showCursor
     setShowCursor(newShowCursor)
     localStorage.setItem("showCursor", newShowCursor) // Save the new state to localStorage
+  }
+
+  // Toggle dark mode on and off
+  const handleDarkMode = () => {
+    const newDarkMode = !darkMode
+    setDarkMode(newDarkMode)
+    localStorage.setItem("darkMode", newDarkMode) // Save the new state to localStorage
   }
 
   return (
@@ -59,11 +71,11 @@ function App() {
       ) : (
         ""
       )}
-      <NavBar setCursor={handleToggle} cursorStatus={showCursor} />
+      <NavBar setCursor={handleToggle} cursorStatus={showCursor} darkMode />
       <div ref={scope}>
-        <Outlet />
+        <Outlet context={[darkMode, setDarkMode]} />
       </div>
-      <Footer />
+      <Footer darkMode />
     </div>
   )
 }
