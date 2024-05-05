@@ -24,7 +24,10 @@ function App() {
     localStorage.getItem("showCursor") === "true" // Get the initial state from localStorage
   )
   const [darkMode, setDarkMode] = useState(
-    localStorage.getItem("darkMode") === "true" // Get the initial state from localStorage
+    window.matchMedia && // Check if the browser supports matchMedia
+      window.matchMedia("(prefers-color-scheme: dark)").matches // Check if the OS has dark mode enabled
+      ? true
+      : localStorage.getItem("darkMode") === "true" // Get the initial state from localStorage
   )
 
   useEffect(() => {
