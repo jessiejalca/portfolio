@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1f2c39;
+      }
+
+      .cls-2 {
+        font-family: Hack-Italic, Hack;
+        font-size: 281.53px;
+        font-style: italic;
+      }
+
+      .cls-3 {
+        fill: #45b1c9;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(112.51 608.97)"><tspan class="cls-3" x="0" y="0">&lt;.</tspan><tspan class="cls-1" x="339" y="0">jessie</tspan><tspan class="cls-3" x="1355.98" y="0">/&gt;</tspan></text>
+</svg>
