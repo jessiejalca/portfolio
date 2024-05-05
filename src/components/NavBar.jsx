@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom"
 import Toggle from "./Toggle"
+import logo from "../assets/logo.png"
 
 const NavBar = (props) => {
   return (
     <header>
-      <Link to={"/"}>Logo</Link>
+      <Link to={"/"}>
+        <img src={logo} alt="Jessie's logo" className="logo" />
+      </Link>
       <nav role="navigation">
         <div className="menu">
           <div className="toggle-box">

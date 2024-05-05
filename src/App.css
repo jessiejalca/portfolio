@@ -33,10 +33,14 @@ p {
 
 /* Navigation Bar */
 header {
-  padding: 2em 2em 0.2em;
+  padding: 1em 2em 0.2em;
   border-bottom: 1px solid #ebebeb;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  width: 120px;
 }
 .menu {
   display: flex;
