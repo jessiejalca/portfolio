@@ -2,10 +2,10 @@ const About = () => {
   return (
     <main>
       <h2>About Me.</h2>
-      <p className="sub">
+      <section aria-label="subheading" className="sub">
         In short, I'm a graphic-designer-turned-developer. These days, I like
         spending my free time building whatever cool thing pops into my mind.
-      </p>
+      </section>
       <p>
         My developer journey started back in 2016, when I took an AP Computer
         Science course. An innate puzzler, I loved it from the start. At the
