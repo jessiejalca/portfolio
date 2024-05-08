@@ -77,7 +77,7 @@ function App() {
           key={location.pathname}
           initial={{ y: 25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, type: "spring" }}>
+          transition={{ duration: 1.2, type: "spring" }}>
           <Outlet context={[darkMode, setDarkMode]} />
           <Footer darkMode={darkMode} />
         </motion.div>

@@ -10,9 +10,9 @@ const Home = () => {
       <div className="hero">
         <h1>I'm Jessie Jalca.</h1>
         <section aria-label="subheading">
-          Frontend developer, JavaScript engineer, user advocate, amateur
-          footballer, hobbyist language learner, serial reader, and multi-genre
-          music listener, <em>at your service</em>.
+          Frontend developer, JavaScript engineer, user advocate, soccer
+          aficionado, hobbyist language learner, and serial reader,{" "}
+          <em>at your service</em>.
         </section>
         <Link className="actionBtn" to={"/projects"}>
           <p>See what I can do</p>
