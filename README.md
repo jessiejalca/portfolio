@@ -1,8 +1,8 @@
 # Personal Portfolio
 
-<!-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+Live Site URL: [My Portfolio](https://jessiejalca.dev)
 
-This is my personal developer portfolio. My goal here is to showcase and put to practice my skills as a developer.
+**This is my personal developer portfolio. My goal is to showcase and put to practice my skills as a developer.**
 
 ## Table of contents
 
@@ -19,11 +19,10 @@ This is my personal developer portfolio. My goal here is to showcase and put to 
 ## Built with
 
 - Semantic HTML5 markup
-- CSS/Sass
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
+- CSS
+- [React](https://reactjs.org/)
+- [React Animated Cursor](https://www.npmjs.com/package/react-animated-cursor)
+- [Framer Motion](https://www.framer.com/motion/)
 
 ## What I learned
 
@@ -60,5 +59,5 @@ For this iteration of my portfolio, I used React with JavaScript. In the future,
 
 ## Author
 
-- Website - [Jessie Jalca](https://www.your-site.com)
+- Website - [Jessie Jalca](https://jessiejalca.dev)
 - LinkedIn - [@jessiejalca](https://www.linkedin.com/in/jessiejalca/)
