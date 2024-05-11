@@ -27,6 +27,7 @@
 ### Dark Mode
 
 Dark Mode was one of my favorite features to add. It's kind of a must-have to me for most apps at this point, and I wanted to make sure that my portfolio had it. This, I knew, would simply be a trick of some good 'ole CSS.
+
 I figured root CSS variables were a good place to start. Then, using CSS's cascading nature, I manipulated said variables within a dark-mode class that I could toggle on and off with a button.
 
 ```css
@@ -89,7 +90,9 @@ And one major player I came across was using ARIA states and properties. So far,
 
 ## Continued development
 
-For this iteration of my portfolio, I used React with JavaScript. In the future, however, I would love to update the project using TypeScript and Svelte.
+Currently, I'm still working on Project Cards and the list or grid that they will appear within. I also need to make the site more responsive. Right now, there's no layout adjustment for smaller screens, which is super important today, so that's high on my list for implementation.
+
+I'm also looking for other improvements that can be made, especially concerning accessibility, usability, and, finally, to have a little bit of fun with it. For example, I may change the structure to be single-page, and allow the user to simply scroll rather than click to navigate to each page. Or I might share what I'm currently listening to using Spotify's API. The world's my oyster.
 
 <!-- ## Useful resources
 
