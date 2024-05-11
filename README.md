@@ -1,8 +1,6 @@
 # Personal Portfolio
 
-Live Site URL: [My Portfolio](https://jessiejalca.dev){:target="\_blank"}
-
-**This is my personal developer portfolio. My goal is to showcase and put to practice my skills as a developer.**
+Live Site URL: [My Portfolio](https://jessiejalca.dev)
 
 ## Table of contents
 
@@ -14,15 +12,15 @@ Live Site URL: [My Portfolio](https://jessiejalca.dev){:target="\_blank"}
   - [Continued development](#continued-development)
   - [Author](#author)
 
-<!-- ![](./screenshot.jpg) -->
+![Screenshot of my portfolio homepage.](./screenshot.jpg)
 
 ## Built with
 
 - Semantic HTML5 markup
 - CSS
-- [React](https://reactjs.org/){:target="\_blank"}
-- [React Animated Cursor](https://www.npmjs.com/package/react-animated-cursor){:target="\_blank"}
-- [Framer Motion](https://www.framer.com/motion/){:target="\_blank"}
+- [React](https://reactjs.org/)
+- [React Animated Cursor](https://www.npmjs.com/package/react-animated-cursor)
+- [Framer Motion](https://www.framer.com/motion/)
 
 ## Favorite Features
 
@@ -102,5 +100,5 @@ For this iteration of my portfolio, I used React with JavaScript. In the future,
 
 ## Author
 
-- Website - [Jessie Jalca](https://jessiejalca.dev){:target="\_blank"}
-- LinkedIn - [@jessiejalca](https://www.linkedin.com/in/jessiejalca/){:target="\_blank"}
+- Website - [Jessie Jalca](https://jessiejalca.dev)
+- LinkedIn - [@jessiejalca](https://www.linkedin.com/in/jessiejalca/)
