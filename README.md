@@ -1,6 +1,8 @@
 # Personal Portfolio
 
-Live Site URL: [My Portfolio](https://jessiejalca.dev)
+![Screenshot of my portfolio homepage.](./screenshot.jpg)
+
+[Live Site URL](https://jessiejalca.dev)
 
 ## Table of contents
 
@@ -11,8 +13,6 @@ Live Site URL: [My Portfolio](https://jessiejalca.dev)
     - [Dark Mode](#dark-mode)
   - [Continued development](#continued-development)
   - [Author](#author)
-
-![Screenshot of my portfolio homepage.](./screenshot.jpg)
 
 ## Built with
 
