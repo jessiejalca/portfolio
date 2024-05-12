@@ -92,7 +92,7 @@ And one major player I came across was using ARIA states and properties. So far,
 
 Currently, I'm still working on Project Cards and the list or grid that they will appear within. I also need to make the site more responsive. Right now, there's no layout adjustment for smaller screens, which is super important today, so that's high on my list for implementation.
 
-I'm also looking for other improvements that can be made, especially concerning accessibility, usability, and, finally, to have a little bit of fun with it. For example, I may change the structure to be single-page, and allow the user to simply scroll rather than click to navigate to each page. Or I might share what I'm currently listening to using Spotify's API. The world's my oyster.
+I'm also looking for other improvements that can be made, especially concerning accessibility, usability, and, finally, to have a little bit of fun with it. For example, I may change the structure to be single-page, and allow the user to simply scroll rather than click to navigate to each page. Or I might share what I'm currently listening to using Spotify's API. I've got a lot of ideas, but it's one step at a time.
 
 <!-- ## Useful resources
 

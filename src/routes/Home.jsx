@@ -11,8 +11,8 @@ const Home = () => {
         <h1>I'm Jessie Jalca.</h1>
         <section aria-label="subheading">
           Frontend developer, JavaScript engineer, user advocate, soccer
-          aficionado, hobbyist language learner, and serial reader,{" "}
-          <em>at your service</em>.
+          aficionado, hobbyist language learner, habitual music listener, and
+          serial reader, <em>at your service</em>.
         </section>
         <Link className="actionBtn" to={"/projects"}>
           <p>See what I can do</p>

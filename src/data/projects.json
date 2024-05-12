@@ -1,0 +1,14 @@
+{
+  "projects": [
+    {
+      "title": "Portfolio",
+      "description": "The website you're looking at right now ;)",
+      "image": "ss-portfolio.jpg",
+      "technologies": ["React", "JavaScript", "HTML", "CSS"],
+      "githubUrl": "https://github.com/jessiejalca/portfolio",
+      "liveUrl": "/",
+      "date": "2024-01-02",
+      "isFeatured": true
+    }
+  ]
+}

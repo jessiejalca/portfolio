@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <main>
-      <h2>About Me.</h2>
+      <h1>About Me.</h1>
       <section aria-label="subheading" className="sub">
         In short, I'm a graphic-designer-turned-developer. These days, I like
         spending my free time building whatever cool thing pops into my mind.
