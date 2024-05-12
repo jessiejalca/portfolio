@@ -231,15 +231,10 @@ footer img {
 }
 
 /* Projects */
-.projects {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5em;
-}
 .featured-projects > div {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1.5em;
+  gap: 0.8em;
 }
 .project-card {
   display: flex;
