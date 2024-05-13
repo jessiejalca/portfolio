@@ -3,6 +3,7 @@
     {
       "title": "Portfolio",
       "description": "The website you're looking at right now ;)",
+      "tech": ["React", "JavaScript", "HTML", "CSS"],
       "image": "ss-portfolio.jpg",
       "alt": "Screenshot of my portfolio website.",
       "link": "https://github.com/jessiejalca/portfolio",
@@ -11,6 +12,7 @@
     {
       "title": "KnightLife",
       "description": "A concept social media app for students at UCF to find events on campus.",
+      "tech": ["React Native", "Supabase", "Expo"],
       "image": "ss-knightlife.png",
       "alt": "Screenshot of the KnightLife app.",
       "link": "https://github.com/charlz-lab/knightlife",

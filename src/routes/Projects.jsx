@@ -4,7 +4,9 @@ import data from "../data/projects.json"
 const Projects = () => {
   const projects = data.projects
 
-  const sortedProjects = projects.sort((a, b) => b.date - a.date)
+  const sortedProjects = projects.sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  )
   const projectList = sortedProjects.map((project, index) => (
     <ProjectCard key={index} project={project} />
   ))
