@@ -101,15 +101,20 @@ nav a.active {
 }
 .settings {
   display: flex;
-  gap: 18px;
+  gap: 12px;
   justify-content: space-between;
   align-items: center;
   padding: 0 1.5rem;
 }
 button.toggle-box {
   border: none;
-  background-color: transparent;
+  background-color: var(--secondary-bg-color);
+  border-radius: 50px;
+  padding: 4px;
   color: var(--accent-gray);
+}
+.settings .toggle-long {
+  padding: 4px 10px;
 }
 .toggle-box {
   display: flex;
@@ -233,7 +238,7 @@ footer img {
 /* Projects */
 .featured-projects > div {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 0.8em;
 }
 .project-card {

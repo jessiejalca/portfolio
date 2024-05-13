@@ -1,6 +1,8 @@
 function Toggle({ name, isChecked, onToggle }) {
   return (
-    <button onClick={onToggle} className="toggle-box prevent-select">
+    <button
+      onClick={onToggle}
+      className="toggle-box toggle-long prevent-select">
       <div
         className={`toggle ${isChecked ? "toggleOn" : ""}`}
         onClick={onToggle}>

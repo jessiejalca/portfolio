@@ -53,16 +53,22 @@ const NavBar = (props) => {
           ""
         )}
         <button
-          className="toggle-box prevent-select"
+          className={`toggle-box prevent-select ${
+            windowWidth > 620 ? "toggle-long" : ""
+          }`}
           onClick={props.setDarkMode}>
           <img
             src={props.darkMode ? darkModeToggleDark : darkModeToggle}
             alt="Dark mode toggle"
             className="dark-mode-toggle"
           />
-          <label htmlFor="dark-mode-toggle" className="toggleLabel">
-            Lights {props.darkMode ? "On" : "Off"}
-          </label>
+          {windowWidth > 620 ? (
+            <label htmlFor="dark-mode-toggle" className="toggleLabel">
+              Lights {props.darkMode ? "On" : "Off"}
+            </label>
+          ) : (
+            ""
+          )}
         </button>
       </div>
     </header>
