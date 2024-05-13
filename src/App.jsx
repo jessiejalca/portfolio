@@ -9,9 +9,7 @@ import "./App.css"
 /* 
 TASKS
 - Make site responsive
-  - Turn off cursor animation on mobile
 - Consider making toggle for all animations
-- Add projects
 */
 
 function App() {
