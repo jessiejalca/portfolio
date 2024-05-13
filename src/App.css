@@ -39,7 +39,8 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-a:hover {
+a:hover,
+a:focus {
   text-decoration: underline;
   text-underline-offset: 0.5rem;
 }
@@ -92,7 +93,8 @@ nav .link {
   padding: 0.2em 0.6em;
   border-radius: 4px;
 }
-nav .link:hover {
+nav .link:hover,
+nav .link:focus {
   background-color: var(--secondary-bg-color);
   color: var(--primary-text-color);
   text-decoration: none;
@@ -124,7 +126,8 @@ button.toggle-box {
   align-items: center;
   gap: 8px;
 }
-.toggle-box:hover {
+.toggle-box:hover,
+.toggle-box:focus {
   color: var(--primary-text-color);
 }
 .dark-mode-toggle {
@@ -261,14 +264,17 @@ footer img {
   height: 200px;
   transition: transform 0.3s ease;
 }
-.project-card:hover {
+.project-card:hover,
+.project-card:focus {
   text-decoration: none;
   background-color: var(--secondary-bg-color);
 }
-.project-card:hover img {
+.project-card:hover img,
+.project-card:focus img {
   transform: scale(1.05);
 }
-.project-card:hover h3 {
+.project-card:hover h3,
+.project-card:focus h3 {
   text-decoration: underline;
   text-underline-offset: 0.5rem;
 }
@@ -286,6 +292,7 @@ footer img {
   font-size: 0.8em;
   font-weight: 800;
 }
-.project-card:hover .tech span {
+.project-card:hover .tech span,
+.project-card:focus .tech span {
   background-color: var(--primary-bg-color);
 }
