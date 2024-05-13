@@ -4,7 +4,7 @@
   --primary-bg-color: #fbfbfb;
   --secondary-bg-color: #ebebeb;
   --accent-blue: #46b1c9;
-  --accent-gray: #8d9499;
+  --accent-gray: #666b6e;
   --toggle-color: #fff;
 
   color-scheme: light dark;
@@ -84,13 +84,16 @@ header .logo {
 nav {
   display: flex;
   align-items: center;
-  gap: 1.1em;
+  gap: 0.4em;
   color: var(--accent-gray);
 }
 nav .link {
   color: var(--accent-gray);
+  padding: 0.2em 0.6em;
+  border-radius: 4px;
 }
 nav .link:hover {
+  background-color: var(--secondary-bg-color);
   color: var(--primary-text-color);
   text-decoration: none;
 }

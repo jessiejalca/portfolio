@@ -53,6 +53,7 @@ const NavBar = (props) => {
           ""
         )}
         <button
+          id="dark-mode-toggle"
           className={`toggle-box prevent-select ${
             windowWidth > 620 ? "toggle-long" : ""
           }`}
