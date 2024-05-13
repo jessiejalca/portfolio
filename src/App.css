@@ -251,6 +251,7 @@ footer img {
 .project-card img {
   background-color: var(--secondary-bg-color);
   object-fit: cover;
+  object-position: center top;
   border: var(--accent-blue) 1px solid;
   border-radius: 8px;
   width: 100%;

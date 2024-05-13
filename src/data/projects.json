@@ -12,7 +12,7 @@
     {
       "title": "KnightLife",
       "description": "A concept social media app for students at UCF to find events on campus.",
-      "tech": ["React Native", "Supabase", "Expo"],
+      "tech": ["React Native", "Supabase", "Expo", "Figma"],
       "image": "ss-knightlife.png",
       "alt": "Screenshot of the KnightLife app.",
       "link": "https://github.com/charlz-lab/knightlife",
