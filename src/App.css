@@ -243,14 +243,16 @@ footer img {
   padding: 20px;
 }
 .project-card img {
+  background-color: var(--secondary-bg-color);
   object-fit: contain;
   border: var(--accent-blue) 1px solid;
   border-radius: 8px;
+  max-height: 200px;
 }
 .project-card:hover {
   text-decoration: none;
   background-color: var(--secondary-bg-color);
-  border-radius: 8px;
+  border-radius: 16px;
 }
 .project-card:hover h3 {
   text-decoration: underline;

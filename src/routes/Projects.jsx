@@ -1,15 +1,8 @@
 import ProjectCard from "../components/ProjectCard"
+import data from "../data/projects.json"
 
 const Projects = () => {
-  const projects = [
-    {
-      title: "Portfolio",
-      description: "The website you're looking at right now ;)",
-      image: "ss-portfolio.jpg",
-      link: "https://github.com/jessiejalca/portfolio",
-      date: new Date("2024-01-02"),
-    },
-  ]
+  const projects = data.projects
 
   const sortedProjects = projects.sort((a, b) => b.date - a.date)
   const projectList = sortedProjects.map((project, index) => (
