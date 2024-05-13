@@ -274,15 +274,18 @@ footer img {
 }
 .tech {
   display: flex;
-  gap: 0.2em;
+  gap: 6px;
   flex-wrap: wrap;
   margin-top: -10px;
 }
 .tech span {
-  background-color: var(--accent-blue);
-  color: var(--toggle-color);
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
   padding: 0.2em 0.6em;
   border-radius: 4px;
   font-size: 0.8em;
-  font-weight: 600;
+  font-weight: 800;
+}
+.project-card:hover .tech span {
+  background-color: var(--primary-bg-color);
 }
