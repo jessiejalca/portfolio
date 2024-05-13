@@ -101,7 +101,7 @@ nav a.active {
 }
 .settings {
   display: flex;
-  gap: 32px;
+  gap: 18px;
   justify-content: space-between;
   align-items: center;
   padding: 0 1.5rem;
@@ -241,6 +241,7 @@ footer img {
   flex-direction: column;
   gap: 0.5em;
   padding: 20px;
+  border-radius: 16px;
 }
 .project-card img {
   background-color: var(--secondary-bg-color);
@@ -254,7 +255,6 @@ footer img {
 .project-card:hover {
   text-decoration: none;
   background-color: var(--secondary-bg-color);
-  border-radius: 16px;
 }
 .project-card:hover img {
   transform: scale(1.05);

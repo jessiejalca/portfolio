@@ -16,6 +16,7 @@ TASKS
 
 function App() {
   const location = useLocation()
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const [showCursor, setShowCursor] = useState(
     localStorage.getItem("showCursor") === "true" // Get the initial state from localStorage
   )
@@ -26,6 +27,14 @@ function App() {
       : localStorage.getItem("darkMode") === "true" // Get the initial state from localStorage
   )
 
+  // Update the window width state when the window is resized
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth)
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
+
+  // Set the dark mode class on the body
   useEffect(() => {
     document.body.classList.toggle("dark-mode", darkMode)
   }, [darkMode])
@@ -46,7 +55,7 @@ function App() {
 
   return (
     <div className="App">
-      {showCursor ? (
+      {showCursor && windowWidth > 780 ? (
         <AnimatedCursor
           innerSize={8}
           outerSize={68}

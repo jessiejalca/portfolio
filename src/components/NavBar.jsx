@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react"
 import { NavLink } from "react-router-dom"
 import Toggle from "./Toggle"
 import logo from "../assets/logo.svg"
@@ -6,6 +7,16 @@ import darkModeToggle from "../assets/dark-mode.svg"
 import darkModeToggleDark from "../assets/dm-dark-mode.svg"
 
 const NavBar = (props) => {
+  // Get the window width
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+  // Update the window width state when the window is resized
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth)
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
+
   return (
     <header>
       <div className="menu">
@@ -32,11 +43,15 @@ const NavBar = (props) => {
         </nav>
       </div>
       <div className="settings">
-        <Toggle
-          name="Animate Cursor"
-          isChecked={props.cursorStatus}
-          onToggle={props.setCursor}
-        />
+        {windowWidth > 780 ? (
+          <Toggle
+            name="Animate Cursor"
+            isChecked={props.cursorStatus}
+            onToggle={props.setCursor}
+          />
+        ) : (
+          ""
+        )}
         <button
           className="toggle-box prevent-select"
           onClick={props.setDarkMode}>
