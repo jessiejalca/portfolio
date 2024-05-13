@@ -40,7 +40,7 @@ a {
   cursor: pointer;
 }
 a:hover,
-a:focus {
+a:focus-visible {
   text-decoration: underline;
   text-underline-offset: 0.5rem;
 }
@@ -94,7 +94,7 @@ nav .link {
   border-radius: 4px;
 }
 nav .link:hover,
-nav .link:focus {
+nav .link:focus-visible {
   background-color: var(--secondary-bg-color);
   color: var(--primary-text-color);
   text-decoration: none;
@@ -113,7 +113,7 @@ nav a.active {
 }
 button.toggle-box {
   border: none;
-  background-color: var(--secondary-bg-color);
+  background-color: var(--primary-bg-color);
   border-radius: 50px;
   padding: 4px;
   color: var(--accent-gray);
@@ -127,8 +127,9 @@ button.toggle-box {
   gap: 8px;
 }
 .toggle-box:hover,
-.toggle-box:focus {
+.toggle-box:focus-visible {
   color: var(--primary-text-color);
+  background-color: var(--secondary-bg-color);
 }
 .dark-mode-toggle {
   width: 24px;
@@ -265,16 +266,16 @@ footer img {
   transition: transform 0.3s ease;
 }
 .project-card:hover,
-.project-card:focus {
+.project-card:focus-visible {
   text-decoration: none;
   background-color: var(--secondary-bg-color);
 }
 .project-card:hover img,
-.project-card:focus img {
+.project-card:focus-visible img {
   transform: scale(1.05);
 }
 .project-card:hover h3,
-.project-card:focus h3 {
+.project-card:focus-visible h3 {
   text-decoration: underline;
   text-underline-offset: 0.5rem;
 }
@@ -293,6 +294,6 @@ footer img {
   font-weight: 800;
 }
 .project-card:hover .tech span,
-.project-card:focus .tech span {
+.project-card:focus-visible .tech span {
   background-color: var(--primary-bg-color);
 }
