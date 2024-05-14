@@ -15,11 +15,11 @@ const Projects = () => {
     <main>
       <h1>Things I've Built.</h1>
       <section aria-label="subheading" className="sub">
-        I've enjoyed making real things that help real people. But also some
-        stuff just for me.
+        I like to make stuff that's fun, exciting, and helpful. Here are a few
+        things I've built recently.
       </section>
       <section aria-label="featured projects" className="featured-projects">
-        <h2>Featured Projects</h2>
+        {/* <h2>Featured Projects</h2> */}
         <div>{projectList}</div>
       </section>
     </main>
