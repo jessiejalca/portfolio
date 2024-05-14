@@ -2,6 +2,8 @@ import githubLogo from "../assets/github.svg"
 import githubLogoDark from "../assets/dm-github.svg"
 import linkedinLogo from "../assets/linkedin.svg"
 import linkedinLogoDark from "../assets/dm-linkedin.svg"
+import emailLogo from "../assets/mail.svg"
+import emailLogoDark from "../assets/dm-mail.svg"
 
 const Footer = (props) => {
   return (
@@ -20,6 +22,14 @@ const Footer = (props) => {
             <img
               src={props.darkMode ? linkedinLogoDark : linkedinLogo}
               alt="LinkedIn logo"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="mailto: jessiejalca@gmail.com">
+            <img
+              src={props.darkMode ? emailLogoDark : emailLogo}
+              alt="Email logo"
             />
           </a>
         </li>

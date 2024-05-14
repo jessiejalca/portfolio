@@ -71,7 +71,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: var(--accent-gray);
   font-weight: 500;
 }
@@ -133,6 +133,32 @@ button.toggle-box {
 }
 .dark-mode-toggle {
   width: 24px;
+}
+@media (max-width: 520px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+  header {
+    padding: 1em 1em 0.2em;
+  }
+  .menu {
+    gap: 10px;
+  }
+  nav {
+    gap: 0;
+  }
+  nav .link {
+    padding: 0.2em 0.4em;
+    font-size: 1rem;
+  }
+  .settings {
+    padding: 5px;
+  }
+  .dark-mode-toggle {
+    width: 28px;
+  }
+}
+@media (max-width: 460px) {
 }
 
 /* Hero */

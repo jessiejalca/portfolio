@@ -28,17 +28,18 @@ const NavBar = (props) => {
           />
         </NavLink>
         <nav role="navigation">
-          <NavLink className="link" to={"/"}>
-            Home
-          </NavLink>
+          {windowWidth > 520 ? (
+            <NavLink className="link" to={"/"}>
+              Home
+            </NavLink>
+          ) : (
+            ""
+          )}
           <NavLink className="link" to={"/projects"}>
             Projects
           </NavLink>
           <NavLink className="link" to={"/about"}>
             About
-          </NavLink>
-          <NavLink className="link" to={"mailto: jessiejalca@gmail.com"}>
-            Contact
           </NavLink>
         </nav>
       </div>
