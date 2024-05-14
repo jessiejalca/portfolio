@@ -8,8 +8,16 @@ import "./App.css"
 
 /* 
 TASKS
-- Make site responsive
-- Consider making toggle for all animations
+- Create a custom 404 page
+- Fix framer motion animations
+- Consider adding some flourishes
+  - Patterned or even animated background
+  - Gradient h1 text
+  - "Currently listening" feature with Spotify API
+- Consider some layout changes
+  - Make the navbar sticky
+  - Add a scroll progress bar
+  - Convert to a single-page app
 */
 
 function App() {
