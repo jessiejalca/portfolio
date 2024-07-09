@@ -1,6 +1,15 @@
 {
   "projects": [
     {
+      "title": "Budgeteer",
+      "description": "A simple budget calculator tool to help make smarter money decisions.",
+      "tech": ["React", "TypeScript", "CSS"],
+      "image": "ss-budgeteer.png",
+      "alt": "Screenshot of the Budgeteer web app.",
+      "link": "https://jessiejalca.github.io/budgeteer/",
+      "date": "2024-07-09"
+    },
+    {
       "title": "Portfolio",
       "description": "The website you're looking at right now ;)",
       "tech": ["React", "JavaScript", "HTML", "CSS"],
