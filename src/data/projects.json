@@ -26,6 +26,15 @@
       "alt": "Screenshot of the KnightLife app.",
       "link": "https://github.com/charlz-lab/knightlife",
       "date": "2024-01-15"
+    },
+    {
+      "title": "ContribHub",
+      "description": "A revamped search feature for an open-source web platform, improving interactive feedback, keyboard navigation, and screen-reader.",
+      "tech": ["Next.js", "TypeScript", "Tailwind"],
+      "image": "ss-contribhub.png",
+      "alt": "Screenshot of the ContribHub web app, including the search bar I worked on.",
+      "link": "https://github.com/jessiejalca/contribhub",
+      "date": "2024-11-04"
     }
   ]
 }
