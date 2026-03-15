@@ -1,6 +1,15 @@
 {
   "projects": [
     {
+      "title": "WikiRoulette",
+      "description": "A chrome extension that suggests random wikipedia pages to open and explore.",
+      "tech": ["React", "JavaScript", "CSS", "Vite"],
+      "image": "ss-wikiroulette.png",
+      "alt": "Preview of the WikiRoulette chrome extension.",
+      "link": "https://github.com/jessiejalca/wiki-chrome-extension",
+      "date": "2023-01-28"
+    },
+    {
       "title": "Budgeteer",
       "description": "A simple budget calculator tool to help make smarter money decisions.",
       "tech": ["React", "TypeScript", "CSS"],
