@@ -15,7 +15,6 @@ TASKS
   - Gradient h1 text
   - "Currently listening" feature with Spotify API
 - Consider some layout changes
-  - Make the navbar sticky
   - Add a scroll progress bar
   - Convert to a single-page app
 */
