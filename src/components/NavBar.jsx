@@ -9,6 +9,7 @@ import darkModeToggleDark from "../assets/dm-dark-mode.svg"
 const NavBar = (props) => {
   // Get the window width
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  const [scrolled, setScrolled] = useState(false)
 
   // Update the window width state when the window is resized
   useEffect(() => {
@@ -17,8 +18,20 @@ const NavBar = (props) => {
     return () => window.removeEventListener("resize", handleResize)
   }, [])
 
+  useEffect(() => {
+    // Toggle `scrolled` from the page's scrollY position.
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 40)
+    }
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    // Ensure state matches initial scroll position on refresh.
+    handleScroll()
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
   return (
-    <header>
+    // `shrink` gets compact CSS styles.
+    <header className={scrolled ? "navbar shrink" : "navbar"}>
       <div className="menu">
         <NavLink to={"/"}>
           <img

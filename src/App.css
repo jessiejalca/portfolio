@@ -65,18 +65,35 @@ p {
 }
 
 /* Navigation Bar */
-header {
+header,
+.navbar {
   padding: 1em 2em 0.2em;
   border-bottom: 1px solid var(--secondary-bg-color);
+  background-color: var(--primary-bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 0.9em;
   color: var(--accent-gray);
   font-weight: 500;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: padding 0.22s ease, font-size 0.22s ease, box-shadow 0.22s ease;
 }
-header .logo {
+.navbar.shrink {
+  /* Compact navbar when scrolled past threshold. */
+  padding: 0.55em 1.5em 0.1em;
+  font-size: 0.85em;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08);
+}
+header .logo,
+.navbar .logo {
   width: 120px;
+  transition: width 0.22s ease;
+}
+.navbar.shrink .logo {
+  width: 96px;
 }
 .menu {
   display: flex;
