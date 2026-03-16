@@ -38,7 +38,7 @@
     },
     {
       "title": "ContribHub",
-      "description": "A revamped search feature for an open-source web platform, improving interactive feedback, keyboard navigation, and screen-reader.",
+      "description": "Open source contribution to ContribHub — rebuilt the core search feature with keyboard navigation and full screen reader support.",
       "tech": ["Next.js", "TypeScript", "Tailwind"],
       "image": "ss-contribhub.png",
       "alt": "Screenshot of the ContribHub web app, including the search bar I worked on.",
