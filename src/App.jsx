@@ -8,12 +8,11 @@ import "./App.css"
 
 /* 
 TASKS
-- Create a custom 404 page
 - Fix framer motion animations
 - Consider adding some flourishes
   - Patterned or even animated background
   - Gradient h1 text
-  - "Currently listening" feature with Spotify API
+  - "Currently working on" feature with GitHub API
 - Consider some layout changes
   - Add a scroll progress bar
   - Convert to a single-page app
@@ -70,16 +69,16 @@ function App() {
           hasBlendMode={true}
           innerStyle={{
             backgroundColor: "#46B1C9",
+            zIndex: 1100,
           }}
           outerStyle={{
             border: "1px solid #46B1C9",
             backgroundColor: "#46B1C91A",
+            zIndex: 1099,
           }}
           showSystemCursor={true}
         />
-      ) : (
-        ""
-      )}
+      ) : null}
       <NavBar
         setCursor={handleToggle}
         cursorStatus={showCursor}
