@@ -1,22 +1,40 @@
 {
   "projects": [
     {
-      "title": "WikiRoulette",
-      "description": "A chrome extension that suggests random wikipedia pages to open and explore.",
-      "tech": ["React", "JavaScript", "CSS", "Vite"],
-      "image": "ss-wikiroulette.png",
-      "alt": "Preview of the WikiRoulette chrome extension.",
-      "link": "https://github.com/jessiejalca/wiki-chrome-extension",
-      "date": "2023-01-28"
+      "title": "ContribHub",
+      "description": "Dug into an open source codebase used by developers worldwide and overhauled the search experience — keyboard navigation, screen reader support, and interactive feedback.",
+      "tech": ["Next.js", "TypeScript", "Tailwind"],
+      "image": "ss-contribhub.png",
+      "alt": "Screenshot of the ContribHub web app, including the search bar I worked on.",
+      "link": "https://github.com/jessiejalca/contribhub",
+      "date": "2024-11-04"
+    },
+    {
+      "title": "KnightLife",
+      "description": "A concept mobile app for UCF students who are tired of missing out. Find events, discover clubs, actually know what's going on.",
+      "tech": ["React Native", "Supabase", "Expo", "Figma"],
+      "image": "ss-knightlife.png",
+      "alt": "Screenshot of the KnightLife app.",
+      "link": "https://github.com/jessiejalca/KnightLife",
+      "date": "2024-01-15"
     },
     {
       "title": "Budgeteer",
-      "description": "A simple budget calculator tool to help make smarter money decisions.",
+      "description": "Tell it your goal and your deadline. It'll tell you what it takes to get there.",
       "tech": ["React", "TypeScript", "CSS"],
       "image": "ss-budgeteer.png",
       "alt": "Screenshot of the Budgeteer web app.",
       "link": "https://github.com/jessiejalca/budgeteer",
       "date": "2024-07-09"
+    },
+    {
+      "title": "WikiRoulette",
+      "description": "One click. One random Wikipedia article. For when you have nowhere to be and everywhere to go.",
+      "tech": ["React", "JavaScript", "CSS", "Vite"],
+      "image": "ss-wikiroulette.png",
+      "alt": "Preview of the WikiRoulette chrome extension.",
+      "link": "https://github.com/jessiejalca/wiki-chrome-extension",
+      "date": "2023-01-28"
     },
     {
       "title": "Portfolio",
@@ -26,24 +44,6 @@
       "alt": "Screenshot of my portfolio website.",
       "link": "https://github.com/jessiejalca/portfolio",
       "date": "2024-01-02"
-    },
-    {
-      "title": "KnightLife",
-      "description": "A concept social media app for students at UCF to find events on campus.",
-      "tech": ["React Native", "Supabase", "Expo", "Figma"],
-      "image": "ss-knightlife.png",
-      "alt": "Screenshot of the KnightLife app.",
-      "link": "https://github.com/jessiejalca/KnightLife",
-      "date": "2024-01-15"
-    },
-    {
-      "title": "ContribHub",
-      "description": "Open source contribution to ContribHub — rebuilt the core search feature with keyboard navigation and full screen reader support.",
-      "tech": ["Next.js", "TypeScript", "Tailwind"],
-      "image": "ss-contribhub.png",
-      "alt": "Screenshot of the ContribHub web app, including the search bar I worked on.",
-      "link": "https://github.com/jessiejalca/contribhub",
-      "date": "2024-11-04"
     }
   ]
 }
