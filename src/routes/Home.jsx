@@ -7,6 +7,10 @@ const Home = () => {
 
   return (
     <main>
+      <div className="status-pill">
+        <div className="circle"></div>
+        <p>Last seen building <span className="timestamp">wiki-chrome-extension ·  today</span></p>
+      </div>
       <div className="hero">
         <h1>I'm Jessie Jalca.</h1>
         <section aria-label="subheading">

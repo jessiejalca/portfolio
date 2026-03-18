@@ -6,6 +6,9 @@
   --accent-blue: #46b1c9;
   --accent-gray: #666b6e;
   --toggle-color: #fff;
+  --status-bg-color: #d4f5e2;
+  --status-dot-color: #22c55e;
+  --status-text-color: #14532d;
 
   color-scheme: light dark;
 }
@@ -15,6 +18,9 @@
   --secondary-bg-color: #2c3e50;
   --accent-gray: #b8bbbd;
   --toggle-color: var(--primary-bg-color);
+  --status-bg-color: #166534;
+  --status-dot-color: #4ade80;
+  --status-text-color: #dcfce8;
 }
 .prevent-select {
   -webkit-user-select: none; /* Safari */
@@ -189,6 +195,41 @@ button.toggle-box {
 .hero em {
   font-weight: 800;
   font-style: italic;
+}
+.status-pill {
+  background-color: var(--status-bg-color);
+  border-radius: 5rem;
+  padding: 2px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 1rem 0;
+}
+.status-pill p {
+  color: var(--status-text-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+.status-pill .timestamp {
+  font-weight: 900;
+}
+.circle {
+  width: 6px;
+  height: 6px;
+  background-color: var(--status-dot-color);
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: pulse 1.3s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.32);
+  }
 }
 .actionBtn {
   display: flex;
