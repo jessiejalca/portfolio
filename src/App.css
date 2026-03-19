@@ -1,9 +1,9 @@
 /* Variables */
 :root {
   --primary-text-color: #202c39;
-  --primary-bg-color: #fbfbfb;
-  --secondary-bg-color: #ebebeb;
-  --accent-blue: #46b1c9;
+  --primary-bg-color: #f0f6fa;
+  --secondary-bg-color: #dce8f2;
+  --accent-blue: #0ea5c8;
   --accent-gray: #666b6e;
   --toggle-color: #fff;
   --status-bg-color: #a3e9c0;
@@ -14,9 +14,9 @@
   color-scheme: light dark;
 }
 .dark-mode {
-  --primary-bg-color: #202c39;
+  --primary-bg-color: #182535;
   --primary-text-color: #fbfbfb;
-  --secondary-bg-color: #2c3e50;
+  --secondary-bg-color: #1e3a55;
   --accent-gray: #b8bbbd;
   --toggle-color: var(--primary-bg-color);
   --status-bg-color: #15803d;
@@ -42,8 +42,8 @@ body {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: radial-gradient(ellipse at 15% 15%, rgba(70, 177, 201, 0.14) 0%, transparent 55%),
-              radial-gradient(ellipse at 85% 80%, rgba(99, 112, 210, 0.11) 0%, transparent 50%);
+  background: radial-gradient(ellipse at 15% 15%, rgba(14, 165, 200, 0.18) 0%, transparent 55%),
+              radial-gradient(ellipse at 85% 80%, rgba(99, 112, 210, 0.15) 0%, transparent 50%);
   background-size: 300% 300%;
   animation: gradientShift 45s ease infinite;
 }
