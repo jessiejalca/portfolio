@@ -12,7 +12,6 @@ TASKS
 - Consider adding some flourishes
   - Patterned or even animated background
   - Gradient h1 text
-  - "Currently working on" feature with GitHub API
 - Consider some layout changes
   - Add a scroll progress bar
   - Convert to a single-page app
@@ -59,6 +58,7 @@ function App() {
 
   return (
     <div className="App">
+      <div className="bg-layer" aria-hidden="true" />
       {showCursor && windowWidth > 780 ? (
         <AnimatedCursor
           innerSize={8}

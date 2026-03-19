@@ -9,6 +9,7 @@
   --status-bg-color: #d4f5e2;
   --status-dot-color: #22c55e;
   --status-text-color: #14532d;
+  --dot-color: rgba(0, 0, 0, 0.13);
 
   color-scheme: light dark;
 }
@@ -21,6 +22,7 @@
   --status-bg-color: #166534;
   --status-dot-color: #4ade80;
   --status-text-color: #dcfce8;
+  --dot-color: rgba(255, 255, 255, 0.11);
 }
 .prevent-select {
   -webkit-user-select: none; /* Safari */
@@ -32,6 +34,23 @@
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
+  background-image: radial-gradient(circle, var(--dot-color) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.bg-layer {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 15% 15%, rgba(70, 177, 201, 0.14) 0%, transparent 55%),
+              radial-gradient(ellipse at 85% 80%, rgba(99, 112, 210, 0.11) 0%, transparent 50%);
+  background-size: 300% 300%;
+  animation: gradientShift 22s ease infinite;
+}
+@keyframes gradientShift {
+  0%   { background-position: 0% 0%; }
+  50%  { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
 }
 main,
 footer {
@@ -75,23 +94,26 @@ header,
 .navbar {
   padding: 1em 2em 0.2em;
   border-bottom: 1px solid var(--secondary-bg-color);
-  background-color: var(--primary-bg-color);
+  background-color: color-mix(in srgb, var(--primary-bg-color) 10%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 0.9em;
-  color: var(--accent-gray);
+  color: var(--primary-text-color);
   font-weight: 500;
   position: sticky;
   top: 0;
   z-index: 1000;
-  transition: padding 0.22s ease, font-size 0.22s ease, box-shadow 0.22s ease;
+  transition: padding 0.22s ease, font-size 0.22s ease, box-shadow 0.22s ease, background-color 0.22s ease;
 }
 .navbar.shrink {
   /* Compact navbar when scrolled past threshold. */
   padding: 0.55em 1.5em 0.1em;
   font-size: 0.85em;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08);
+  background-color: color-mix(in srgb, var(--primary-bg-color) 55%, transparent);
+  box-shadow: 0 8px 24px -4px color-mix(in srgb, var(--primary-bg-color) 85%, transparent), 0 1px 8px rgba(0, 0, 0, 0.08);
 }
 header .logo,
 .navbar .logo {
@@ -109,10 +131,10 @@ nav {
   display: flex;
   align-items: center;
   gap: 0.4em;
-  color: var(--accent-gray);
+  color: var(--primary-text-color);
 }
 nav .link {
-  color: var(--accent-gray);
+  color: var(--primary-text-color);
   padding: 0.2em 0.6em;
   border-radius: 4px;
 }
@@ -139,7 +161,7 @@ button.toggle-box {
   background-color: var(--primary-bg-color);
   border-radius: 50px;
   padding: 4px;
-  color: var(--accent-gray);
+  color: var(--primary-text-color);
 }
 .settings .toggle-long {
   padding: 4px 10px;
@@ -283,7 +305,8 @@ footer img {
   height: 16px;
   width: 32px;
   border-radius: 8px;
-  background-color: var(--accent-gray);
+  background-color: color-mix(in srgb, var(--accent-gray) 45%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent-gray) 60%, transparent);
   display: flex;
   align-items: center;
   padding: 2px;
@@ -352,7 +375,10 @@ footer img {
 .project-card:hover,
 .project-card:focus-visible {
   text-decoration: none;
-  background-color: var(--secondary-bg-color);
+  background-color: color-mix(in srgb, var(--secondary-bg-color) 55%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  outline: 1px solid color-mix(in srgb, var(--accent-blue) 25%, transparent);
 }
 .project-card:hover img,
 .project-card:focus-visible img {
@@ -370,7 +396,8 @@ footer img {
   margin-top: -10px;
 }
 .tech span {
-  background-color: var(--secondary-bg-color);
+  background-color: color-mix(in srgb, var(--secondary-bg-color) 70%, transparent);
+  border: 1px solid color-mix(in srgb, var(--primary-text-color) 8%, transparent);
   color: var(--primary-text-color);
   padding: 0.2em 0.6em;
   border-radius: 4px;
