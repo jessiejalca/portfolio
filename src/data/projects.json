@@ -40,7 +40,7 @@
       "title": "Portfolio",
       "description": "The website you're looking at right now ;)",
       "tech": ["React", "JavaScript", "HTML", "CSS"],
-      "image": "ss-portfolio.jpg",
+      "image": "ss-portfolio.png",
       "alt": "Screenshot of my portfolio website.",
       "link": "https://github.com/jessiejalca/portfolio",
       "date": "2024-01-02"
