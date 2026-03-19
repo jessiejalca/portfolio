@@ -9,12 +9,12 @@ import "./App.css"
 /* 
 TASKS
 - Fix framer motion animations
-- Consider adding some flourishes
-  - Patterned or even animated background
-  - Gradient h1 text
 - Consider some layout changes
   - Add a scroll progress bar
   - Convert to a single-page app
+- More mobile-specific designs
+  - Bottom floating navigation
+  - Center the currently slightly off-kilter list of projects
 */
 
 function App() {
