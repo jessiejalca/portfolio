@@ -220,7 +220,7 @@ button.toggle-box {
   background-color: var(--status-dot-color);
   border-radius: 50%;
   box-sizing: border-box;
-  animation: pulse 1.3s ease-in-out infinite;
+  animation: pulse 2s ease-in-out infinite;
 }
 @keyframes pulse {
   0%,
@@ -228,7 +228,7 @@ button.toggle-box {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.32);
+    transform: scale(1.22);
   }
 }
 .actionBtn {
