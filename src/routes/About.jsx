@@ -3,23 +3,17 @@ const About = () => {
     <main>
       <h1>About Me.</h1>
       <section aria-label="subheading" className="sub">
-        In short, I'm a graphic-designer-turned-developer. These days, I like
-        spending my free time building whatever cool thing pops into my mind.
+        I build things for the web. Started in design, ended up in code — and never looked back.
       </section>
       <p>
-        My developer journey started back in 2016, when I took an AP Computer
-        Science course. An innate puzzler, I loved it from the start. At the
-        time, I thought it would just be a fun hobby, but about five years later
-        I realized I wanted to make it my full-time job. And that's exactly what
-        I've been working towards ever since.
+        I've always been drawn to logic, patterns, and figuring things out, which is probably why coding clicked the moment I picked it up in 2016. What started as a hobby turned into a career — a Digital Media degree from UCF with a focus in Web and Social Platforms, a UX/UI internship, and now a BS in Computer Science at WGU. The design background stuck around too, and honestly I think it makes me a better developer.
       </p>
       <p>
-        When I'm not coding, I'm probably reading, binging whatever sitcom I'm
-        currently obsessed with, or playing soccer. My favorite thing to do is
-        to dive deep into a good story - or live one out with my friends and
-        family.
+        When I'm not coding, I'm probably reading, binging whatever sitcom I'm currently obsessed with, or playing soccer. My favorite thing to do is to dive deep into a good story — or live one out with my friends and family.
       </p>
-      <h3></h3>
+      <p>
+        Currently open to internships and entry-level roles — if something caught your eye, I'd love to hear from you.
+      </p>
     </main>
   )
 }
