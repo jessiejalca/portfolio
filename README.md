@@ -1,18 +1,17 @@
 # Personal Portfolio
 
-![Screenshot of my portfolio homepage.](./screenshot.jpg)
+![Screenshot of my portfolio homepage.](./public/ss-portfolio.png)
 
 [Live Site URL](https://jessiejalca.dev)
 
 ## Table of contents
 
-- [Personal Portfolio](#personal-portfolio)
-  - [Table of contents](#table-of-contents)
-  - [Built with](#built-with)
-  - [Favorite Features](#favorite-features)
-    - [Dark Mode](#dark-mode)
-  - [Continued development](#continued-development)
-  - [Author](#author)
++ [Table of contents](#table-of-contents)
++ [Built with](#built-with)
++ [Favorite Features](#favorite-features)
+  + [Dark Mode](#dark-mode)
++ [Continued development](#continued-development)
++ [Author](#author)
 
 ## Built with
 
