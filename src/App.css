@@ -231,9 +231,11 @@ button.toggle-box {
   font-style: italic;
 }
 .status-pill {
-  background-color: color-mix(in srgb, var(--status-bg-color) 65%, transparent);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background-color: color-mix(in srgb, var(--status-bg-color) 18%, color-mix(in srgb, var(--primary-bg-color) 25%, transparent));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid color-mix(in srgb, var(--status-dot-color) 55%, transparent);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--status-dot-color) 10%, transparent);
   border-radius: 5rem;
   padding: 2px 10px;
   display: inline-flex;
