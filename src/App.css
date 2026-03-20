@@ -59,7 +59,7 @@ main,
 footer {
   max-width: 60rem;
   margin: 0 auto;
-  padding: 5rem 3rem 3rem;
+  padding: 76px;
 }
 a {
   color: var(--primary-text-color);
@@ -185,6 +185,9 @@ button.toggle-box {
   width: 24px;
 }
 @media (max-width: 520px) {
+  main, footer {
+    padding: 62px 24px;
+  }
   h1 {
     font-size: 2.8rem;
   }
