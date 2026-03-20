@@ -1,28 +1,29 @@
 /* Variables */
 :root {
   --primary-text-color: #202c39;
-  --primary-bg-color: #f0f6fa;
-  --secondary-bg-color: #dce8f2;
+  --primary-bg-color: #f7f6fc;
+  --secondary-bg-color: #ebebf3;
   --accent-blue: #0ea5c8;
+  --accent-warm: #d63a8e;
   --accent-gray: #666b6e;
   --toggle-color: #fff;
   --status-bg-color: #a3e9c0;
   --status-dot-color: #16a34a;
   --status-text-color: #14532d;
-  --dot-color: rgba(0, 0, 0, 0.13);
+  --dot-color: rgba(0, 0, 0, 0.15);
 
   color-scheme: light dark;
 }
 .dark-mode {
   --primary-bg-color: #182535;
   --primary-text-color: #fbfbfb;
-  --secondary-bg-color: #1e3a55;
+  --secondary-bg-color: #163352;
   --accent-gray: #b8bbbd;
   --toggle-color: var(--primary-bg-color);
   --status-bg-color: #15803d;
   --status-dot-color: #4ade80;
   --status-text-color: #f0fdf4;
-  --dot-color: rgba(255, 255, 255, 0.11);
+  --dot-color: rgba(255, 255, 255, 0.14);
 }
 .prevent-select {
   -webkit-user-select: none; /* Safari */
@@ -35,15 +36,17 @@ body {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
   background-image: radial-gradient(circle, var(--dot-color) 1px, transparent 1px);
-  background-size: 24px 24px;
+  background-size: 18px 18px;
 }
 .bg-layer {
   position: fixed;
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: radial-gradient(ellipse at 15% 15%, rgba(14, 165, 200, 0.18) 0%, transparent 55%),
-              radial-gradient(ellipse at 85% 80%, rgba(99, 112, 210, 0.15) 0%, transparent 50%);
+  background: radial-gradient(ellipse at 15% 15%, rgba(14, 165, 200, 0.16) 0%, transparent 35%),
+              radial-gradient(ellipse at 85% 80%, rgba(99, 112, 210, 0.22) 0%, transparent 32%),
+              radial-gradient(ellipse at 80% 10%, rgba(214, 58, 142, 0.32) 0%, transparent 28%),
+              radial-gradient(ellipse at 20% 85%, rgba(214, 58, 142, 0.18) 0%, transparent 25%);
   background-size: 300% 300%;
   animation: gradientShift 45s ease infinite;
 }
@@ -54,7 +57,7 @@ body {
 }
 main,
 footer {
-  max-width: 54rem;
+  max-width: 60rem;
   margin: 0 auto;
   padding: 5rem 3rem 3rem;
 }
@@ -140,7 +143,8 @@ nav .link {
 }
 nav .link:hover,
 nav .link:focus-visible {
-  background-color: var(--secondary-bg-color);
+  background-color: color-mix(in srgb, var(--accent-blue) 18%, transparent);
+  outline: 1px solid color-mix(in srgb, var(--accent-blue) 50%, transparent);
   color: var(--primary-text-color);
   text-decoration: none;
 }
@@ -174,7 +178,8 @@ button.toggle-box {
 .toggle-box:hover,
 .toggle-box:focus-visible {
   color: var(--primary-text-color);
-  background-color: var(--secondary-bg-color);
+  background-color: color-mix(in srgb, var(--accent-blue) 18%, transparent);
+  outline: 1px solid color-mix(in srgb, var(--accent-blue) 50%, transparent);
 }
 .dark-mode-toggle {
   width: 24px;
@@ -393,10 +398,10 @@ footer img {
 .project-card:hover,
 .project-card:focus-visible {
   text-decoration: none;
-  background-color: color-mix(in srgb, var(--secondary-bg-color) 55%, transparent);
+  background-color: color-mix(in srgb, var(--secondary-bg-color) 80%, transparent);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  outline: 1px solid color-mix(in srgb, var(--accent-blue) 25%, transparent);
+  outline: 1px solid color-mix(in srgb, var(--accent-blue) 55%, transparent);
 }
 .project-card:hover img,
 .project-card:focus-visible img {
@@ -414,8 +419,8 @@ footer img {
   margin-top: -10px;
 }
 .tech span {
-  background-color: color-mix(in srgb, var(--secondary-bg-color) 70%, transparent);
-  border: 1px solid color-mix(in srgb, var(--primary-text-color) 8%, transparent);
+  background-color: color-mix(in srgb, var(--accent-blue) 14%, var(--secondary-bg-color));
+  border: 1px solid color-mix(in srgb, var(--accent-blue) 40%, transparent);
   color: var(--primary-text-color);
   padding: 0.2em 0.6em;
   border-radius: 4px;
@@ -424,5 +429,6 @@ footer img {
 }
 .project-card:hover .tech span,
 .project-card:focus-visible .tech span {
-  background-color: var(--primary-bg-color);
+  background-color: color-mix(in srgb, var(--accent-blue) 22%, var(--primary-bg-color));
+  border-color: color-mix(in srgb, var(--accent-blue) 60%, transparent);
 }
