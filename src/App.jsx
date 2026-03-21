@@ -9,16 +9,6 @@ import BottomNav from "./components/BottomNav"
 import ContactBar from "./components/ContactBar"
 import "./App.css"
 
-/* 
-TASKS
-- Fix framer motion animations
-- Consider some layout changes
-  - Add a scroll progress bar
-  - Convert to a single-page app
-- More mobile-specific designs
-  - Bottom floating navigation
-  - Center the currently slightly off-kilter list of projects
-*/
 
 function App() {
   const location = useLocation()
@@ -101,7 +91,7 @@ function App() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.2, type: "spring" }}>
           <Outlet context={[darkMode, setDarkMode]} />
-          <Footer darkMode={darkMode} />
+          <Footer />
         </motion.div>
       </AnimatePresence>
     </div>
