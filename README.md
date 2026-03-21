@@ -49,8 +49,10 @@ Fully responsive across desktop and mobile. Mobile layout includes a bottom navi
 src/
 ├── components/       # Reusable UI components
 ├── data/             # Project data (source of truth for tags, etc.)
-├── pages/            # Home, Projects, About, 404
-└── styles/           # Global styles and CSS variables
+├── hooks/            # Custom React hooks
+├── routes/           # Page-level route components
+├── App.css           # Global styles and CSS variables
+└── index.css         # Reset styles
 ```
 
 ## Running locally
