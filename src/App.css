@@ -402,6 +402,17 @@ button.toggle-box {
   font-style: italic;
 }
 
+
+/* Tech stack strip */
+.tech-strip {
+  margin-top: 3rem;
+}
+
+.hero .tech-strip {
+  margin-top: 0;
+}
+
+
 /* Status pill — glass effect with green accent */
 .status-pill {
   background-color: color-mix(in srgb, var(--status-bg-color) 18%, color-mix(in srgb, var(--primary-bg-color) 25%, transparent));
