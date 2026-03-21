@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion"
 import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
 import BottomNav from "./components/BottomNav"
+import ScrollToTop from "./components/ScrollToTop"
 import ContactBar from "./components/ContactBar"
 import "./App.css"
 
@@ -76,6 +77,7 @@ function App() {
           showSystemCursor={true}
         />
       ) : null}
+      <ScrollToTop />
       <NavBar
         setCursor={handleToggle}
         cursorStatus={showCursor}
