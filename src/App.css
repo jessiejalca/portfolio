@@ -179,7 +179,7 @@ h2 {
 }
 
 h3 {
-  margin: 0.8rem 0 0;
+  margin: 0.8rem 0 0.4rem;
 }
 
 p {
@@ -530,11 +530,24 @@ button.toggle-box {
   transition: transform 0.3s ease;
 }
 
+/* Suppress card-level underline on all interactive states; only the title underlines */
+.project-card:hover,
+.project-card:focus,
+.project-card:focus-visible {
+  text-decoration: none;
+}
+
+.project-card:hover h3,
+.project-card:focus h3,
+.project-card:focus-visible h3 {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
 /* Hover effects and image zoom — desktop only */
 @media (min-width: 521px) {
   .project-card:hover,
   .project-card:focus-visible {
-    text-decoration: none;
     background-color: color-mix(in srgb, var(--primary-bg-color) 30%, transparent);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -544,12 +557,6 @@ button.toggle-box {
   .project-card:hover img,
   .project-card:focus-visible img {
     transform: scale(1.05);
-  }
-
-  .project-card:hover h3,
-  .project-card:focus-visible h3 {
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
   }
 }
 
