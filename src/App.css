@@ -136,7 +136,7 @@ footer {
 @media (max-width: 520px) {
   main,
   footer {
-    padding: 62px 24px;
+    padding: 62px 24px 100px;
   }
 }
 
@@ -277,25 +277,171 @@ nav a.active {
 }
 
 @media (max-width: 520px) {
-  header {
-    padding: 1em 1em 0.2em;
-  }
-
-  .menu {
-    gap: 10px;
-  }
-
-  nav {
-    gap: 0;
-  }
-
-  nav .link {
-    padding: 0.2em 0.4em;
-    font-size: 1rem;
+  header,
+  .navbar {
+    display: none;
   }
 
   .settings {
     padding: 5px;
+  }
+}
+
+/* Bottom navigation — mobile only, fixed to bottom of viewport */
+.bottom-nav,
+.contact-bar {
+  display: none;
+}
+
+@media (max-width: 520px) {
+  .bottom-nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    padding: 6px;
+    border-radius: 20px;
+    border: 1px solid color-mix(in srgb, var(--primary-text-color) 15%, transparent);
+    background-color: color-mix(in srgb, var(--primary-bg-color) 55%, transparent);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+  }
+
+  /* Scrollable section — page nav links */
+  .bottom-nav-pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    flex: 1;
+    min-width: 0;
+  }
+
+  /* Equal-width nav items, centered within their share of the pages section */
+  .bottom-nav-pages .bottom-nav-item {
+    flex: 1;
+    flex-shrink: 1;
+  }
+
+  .bottom-nav-pages::-webkit-scrollbar {
+    display: none;
+  }
+
+.bottom-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 3px;
+    padding: 6px 12px;
+    border-radius: 14px;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-size: 0.65rem;
+    font-weight: 600;
+    border: 1px solid transparent;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .bottom-nav-item:hover,
+  .bottom-nav-item:focus-visible,
+  .bottom-nav-item.active {
+    text-decoration: none;
+    background-color: color-mix(in srgb, var(--primary-bg-color) 30%, transparent);
+    border-color: color-mix(in srgb, var(--primary-text-color) 25%, transparent);
+  }
+
+  /* Icon-only items (contacts + dark mode toggle) */
+  .bottom-nav-icon {
+    padding: 8px 10px;
+  }
+
+  .bottom-nav-icon img {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+
+  /* Contact bar — fixed to top-right, mobile only */
+  .contact-bar {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    padding: 6px;
+    border-radius: 20px;
+    border: 1px solid color-mix(in srgb, var(--primary-text-color) 15%, transparent);
+    background-color: color-mix(in srgb, var(--primary-bg-color) 55%, transparent);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+  }
+
+  .contact-bar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 8px;
+    border-radius: 14px;
+    border: 1px solid transparent;
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .contact-bar-item:hover,
+  .contact-bar-item:focus-visible {
+    text-decoration: none;
+    background-color: color-mix(in srgb, var(--primary-bg-color) 30%, transparent);
+    border-color: color-mix(in srgb, var(--primary-text-color) 25%, transparent);
+  }
+
+  /* Suppress browser default focus background on mouse click */
+  .contact-bar-item:focus:not(:focus-visible) {
+    outline: none;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  .contact-bar-item img {
+    width: 18px;
+    height: 18px;
+    display: block;
+  }
+
+  .contact-bar-divider {
+    width: 1px;
+    height: 18px;
+    background-color: color-mix(in srgb, var(--primary-text-color) 15%, transparent);
+    flex-shrink: 0;
+    margin: 0 2px;
+  }
+
+  /* Vertical divider between nav groups */
+  .bottom-nav-divider {
+    width: 1px;
+    height: 24px;
+    background-color: color-mix(in srgb, var(--primary-text-color) 15%, transparent);
+    flex-shrink: 0;
+    margin: 0 2px;
+  }
+
+  /* Footer is redundant on mobile — contacts live in the bottom nav */
+  footer {
+    display: none;
   }
 }
 
@@ -410,6 +556,7 @@ button.toggle-box {
 /* Tech stack strip */
 .tech-strip {
   margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 .hero .tech-strip {

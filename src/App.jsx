@@ -5,6 +5,8 @@ import { Outlet, useLocation } from "react-router-dom"
 import { AnimatePresence, motion } from "framer-motion"
 import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
+import BottomNav from "./components/BottomNav"
+import ContactBar from "./components/ContactBar"
 import "./App.css"
 
 /* 
@@ -90,6 +92,8 @@ function App() {
         darkMode={darkMode}
         setDarkMode={handleDarkMode}
       />
+      <ContactBar darkMode={darkMode} setDarkMode={handleDarkMode} />
+      <BottomNav />
       <AnimatePresence>
         <motion.div
           key={location.pathname}
