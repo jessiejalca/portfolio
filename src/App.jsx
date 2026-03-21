@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { useBackgroundEffects } from "./hooks/useBackgroundEffects"
 import AnimatedCursor from "react-animated-cursor"
 import { Outlet, useLocation } from "react-router-dom"
 import { AnimatePresence, motion } from "framer-motion"
@@ -49,6 +50,8 @@ function App() {
     localStorage.setItem("showCursor", newShowCursor) // Save the new state to localStorage
   }
 
+  useBackgroundEffects()
+
   // Toggle dark mode on and off
   const handleDarkMode = () => {
     const newDarkMode = !darkMode
@@ -59,6 +62,8 @@ function App() {
   return (
     <div className="App">
       <div className="bg-layer" aria-hidden="true" />
+      <div className="mouse-blob" aria-hidden="true" />
+      <canvas id="dot-canvas" aria-hidden="true" />
       {showCursor && windowWidth > 780 ? (
         <AnimatedCursor
           innerSize={8}
