@@ -475,10 +475,27 @@ button.toggle-box {
 }
 
 /* Bouncing arrow CTA */
-.actionBtn {
+.actionBtn,
+.actionBtn:hover,
+.actionBtn:focus-visible {
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-decoration: none;
+}
+
+.actionBtn p {
+  background-image: linear-gradient(var(--primary-text-color), var(--primary-text-color));
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.3s ease;
+  padding-bottom: 0.15rem;
+}
+
+.actionBtn:hover p,
+.actionBtn:focus-visible p {
+  background-size: 100% 1px;
 }
 
 .actionBtn > img {
@@ -554,11 +571,21 @@ button.toggle-box {
   text-decoration: none;
 }
 
+/* Animated underline on h3 — grows left to right on hover, constrained to text width */
+.project-card h3 {
+  width: fit-content;
+  background-image: linear-gradient(var(--primary-text-color), var(--primary-text-color));
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.3s ease;
+  padding-bottom: 0.3rem;
+}
+
 .project-card:hover h3,
 .project-card:focus h3,
 .project-card:focus-visible h3 {
-  text-decoration: underline;
-  text-underline-offset: 0.5rem;
+  background-size: 100% 1px;
 }
 
 /* Hover effects and image zoom — desktop only */
