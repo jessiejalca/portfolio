@@ -134,9 +134,12 @@ footer {
 }
 
 @media (max-width: 520px) {
-  main,
+  main {
+    padding: 80px 24px 16px;
+  }
+
   footer {
-    padding: 80px 24px 100px;
+    padding: 0 24px 100px;
   }
 }
 
@@ -465,9 +468,8 @@ nav .link:focus-visible {
     margin: 0 2px;
   }
 
-  /* Footer is redundant on mobile — contacts live in the bottom nav */
   footer {
-    display: none;
+    display: block;
   }
 }
 
