@@ -55,7 +55,6 @@ const BottomNav = () => {
           </NavLink>
         ))}
       </div>
-
     </nav>
   )
 }
