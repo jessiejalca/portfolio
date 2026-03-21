@@ -250,12 +250,14 @@ nav .link {
   color: var(--primary-text-color);
   padding: 0.2em 0.6em;
   border-radius: 4px;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 nav .link:hover,
 nav .link:focus-visible {
   background-color: color-mix(in srgb, var(--primary-bg-color) 30%, transparent);
-  outline: 1px solid color-mix(in srgb, var(--primary-text-color) 25%, transparent);
+  border-color: color-mix(in srgb, var(--primary-text-color) 25%, transparent);
   color: var(--primary-text-color);
   text-decoration: none;
 }
@@ -303,7 +305,6 @@ nav a.active {
    ============================================================================= */
 
 button.toggle-box {
-  border: none;
   background-color: var(--primary-bg-color);
   border-radius: 50px;
   padding: 4px;
@@ -318,13 +319,15 @@ button.toggle-box {
   display: flex;
   align-items: center;
   gap: 8px;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .toggle-box:hover,
 .toggle-box:focus-visible {
   color: var(--primary-text-color);
   background-color: color-mix(in srgb, var(--primary-bg-color) 30%, transparent);
-  outline: 1px solid color-mix(in srgb, var(--primary-text-color) 25%, transparent);
+  border-color: color-mix(in srgb, var(--primary-text-color) 25%, transparent);
 }
 
 .dark-mode-toggle {
@@ -346,6 +349,7 @@ button.toggle-box {
   display: flex;
   align-items: center;
   padding: 2px;
+  transition: background-color 0.2s ease;
 }
 
 .toggleOn {
@@ -529,6 +533,8 @@ button.toggle-box {
   padding: 20px;
   border-radius: 16px;
   text-decoration: none;
+  border: 1px solid transparent;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 
 .project-card img {
@@ -562,7 +568,7 @@ button.toggle-box {
     background-color: color-mix(in srgb, var(--primary-bg-color) 30%, transparent);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    outline: 1px solid color-mix(in srgb, var(--primary-text-color) 25%, transparent);
+    border-color: color-mix(in srgb, var(--primary-text-color) 25%, transparent);
   }
 
   .project-card:hover img,
