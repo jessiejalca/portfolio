@@ -107,3 +107,42 @@ export const content = {
         },
     }
 }
+
+// Static, language-agnostic data
+export const projectsMeta = [
+    {
+        id: "contribhub",
+        tech: ["Next.js", "TypeScript", "Tailwind"],
+        image: "ss-contribhub.png",
+        link: "https://github.com/jessiejalca/contribhub",
+        date: "2024-11-04",
+    },
+    {
+        id: "knightlife",
+        tech: ["React Native", "Supabase", "Expo", "Figma"],
+        image: "ss-knightlife.png",
+        link: "https://github.com/jessiejalca/KnightLife",
+        date: "2024-01-15",
+    },
+    {
+        id: "budgeteer",
+        tech: ["React", "TypeScript", "CSS"],
+        image: "ss-budgeteer.png",
+        link: "https://github.com/jessiejalca/budgeteer",
+        date: "2024-07-09",
+    },
+    {
+        id: "wikiroulette",
+        tech: ["React", "JavaScript", "CSS", "Vite"],
+        image: "ss-wikiroulette.png",
+        link: "https://github.com/jessiejalca/wiki-chrome-extension",
+        date: "2023-01-28",
+    },
+    {
+        id: "portfolio",
+        tech: ["React", "JavaScript", "CSS"],
+        image: "ss-portfolio.png",
+        link: "https://github.com/jessiejalca/portfolio",
+        date: "2024-01-02",
+    },
+]
