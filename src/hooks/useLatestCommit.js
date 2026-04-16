@@ -1,18 +1,37 @@
 import { useState, useEffect } from "react"
 
 // Format GitHub last commit data
-export function formatRelative(dateStr) {
+export function formatRelative(dateStr, lang = "en") {
   const diff = Date.now() - new Date(dateStr).getTime()
   const minutes = Math.floor(diff / 60000)
   const hours = Math.floor(minutes / 60)
   const days = Math.floor(hours / 24)
 
-  if (minutes < 1) return "just now"
-  if (minutes < 60) return `${minutes}m ago`
-  if (hours < 24) return `${hours}h ago`
-  if (days === 1) return "yesterday"
-  if (days < 30) return `${days}d ago`
-  return new Date(dateStr).toLocaleDateString()
+  const t = {
+    en: {
+      justNow: "just now",
+      minutesAgo: (m) => `${m}m ago`,
+      hoursAgo: (h) => `${h}h ago`,
+      yesterday: "yesterday",
+      daysAgo: (d) => `${d}d ago`,
+    },
+    fr: {
+      justNow: "à l'instant",
+      minutesAgo: (m) => `il y a ${m}min`,
+      hoursAgo: (h) => `il y a ${h}h`,
+      yesterday: "hier",
+      daysAgo: (d) => `il y a ${d}j`,
+    },
+  }
+
+  const l = t[lang] ?? t.en
+
+  if (minutes < 1) return l.justNow
+  if (minutes < 60) return l.minutesAgo(minutes)
+  if (hours < 24) return l.hoursAgo(hours)
+  if (days === 1) return l.yesterday
+  if (days < 30) return l.daysAgo(days)
+  return new Date(dateStr).toLocaleDateString(lang)
 }
 
 // Check for cached data to protect against GitHub's 60 req/hr limit

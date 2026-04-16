@@ -2,7 +2,10 @@
 export const content = {
     en: {
         home: {
-            statusPill: (repo, time) => `Last seen building ${repo} · ${time}`,
+            statusPill: {
+                prefix: "Last seen building ",
+                recently: "recently",
+            },
             headline: "I'm Jessie Jalca.",
             subheadline: {
                 text: "Developer with a designer's eye, CS student at WGU, soccer aficionado, and hobbyist language learner — ",
@@ -55,7 +58,10 @@ export const content = {
     },
     fr: {
         home: {
-            statusPill: (repo, time) => `En train de construire ${repo} · ${time}`,
+            statusPill: {
+                prefix: "En train de construire ",
+                recently: "récemment",
+            },
             headline: "Je suis Jessie Jalca.",
             subheadline: {
             text: "Développeuse avec la sensibilité d'un designer, étudiante en informatique à WGU, passionnée de foot, et amoureuse des langues — ",
