@@ -6,8 +6,8 @@ export const content = {
                 prefix: "Last seen building ",
                 recently: "recently",
             },
-            headline: "I'm Jessie Jalca.",
-            subheadline: {
+            heading: "I'm Jessie Jalca.",
+            subheading: {
                 text: "Developer with a designer's eye, CS student at WGU, soccer aficionado, and hobbyist language learner — ",
                 em: "at your service",
             },
@@ -62,8 +62,8 @@ export const content = {
                 prefix: "En train de construire ",
                 recently: "récemment",
             },
-            headline: "Je suis Jessie Jalca.",
-            subheadline: {
+            heading: "Je suis Jessie Jalca.",
+            subheading: {
             text: "Développeuse avec la sensibilité d'un designer, étudiante en informatique à WGU, passionnée de foot, et amoureuse des langues — ",
             em: "à votre service",
             },

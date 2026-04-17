@@ -32,9 +32,9 @@ const Home = () => {
         <p>{t.statusPill.prefix}<span className="timestamp">{repoName} · {timeAgo}</span></p>
       </div>
       <div className="hero">
-        <h1>{t.headline}</h1>
+        <h1>{t.heading}</h1>
         <section aria-label="subheading">
-          {t.subheadline.text}<em>{t.subheadline.em}</em>.
+          {t.subheading.text}<em>{t.subheading.em}</em>.
         </section>
         <Link className="actionBtn" to={"/projects"}>
           <p>{t.cta}</p>
