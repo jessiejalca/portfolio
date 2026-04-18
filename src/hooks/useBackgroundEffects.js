@@ -19,7 +19,7 @@ function drawDots(ctx, canvas, dotX, dotY, isHoverDevice) {
   ctx.clearRect(0, 0, canvas.width, canvas.height)
 
   // Base pass — all dots at normal opacity
-  ctx.fillStyle = isDark ? "rgba(255,255,255,0.28)" : "rgba(0,0,0,0.25)"
+  ctx.fillStyle = isDark ? "rgba(255,255,255,0.18)" : "rgba(0,0,0,0.16)"
   ctx.beginPath()
   for (let gx = DOT_SPACING; gx < canvas.width; gx += DOT_SPACING) {
     for (let gy = DOT_SPACING; gy < canvas.height; gy += DOT_SPACING) {
@@ -31,7 +31,7 @@ function drawDots(ctx, canvas, dotX, dotY, isHoverDevice) {
 
   // Boost pass — dots near cursor brightened with smooth distance falloff
   if (isHoverDevice) {
-    const boostAlpha = isDark ? 0.5 : 0.45
+    const boostAlpha = isDark ? 0.34 : 0.28
     ctx.fillStyle = isDark ? "#ffffff" : "#000000"
     for (let gx = DOT_SPACING; gx < canvas.width; gx += DOT_SPACING) {
       for (let gy = DOT_SPACING; gy < canvas.height; gy += DOT_SPACING) {

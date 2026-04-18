@@ -4,8 +4,8 @@
 
 :root {
   --primary-text-color: #202c39;
-  --primary-bg-color: #f7f6fc;
-  --secondary-bg-color: #ebebf3;
+  --primary-bg-color: #f0f7fb;
+  --secondary-bg-color: #deeef6;
   --accent-blue: #0ea5c8;
   --accent-periwinkle: #6370d2;
   --accent-warm: #d63a8e;
@@ -20,9 +20,9 @@
 }
 
 .dark-mode {
-  --primary-bg-color: #182535;
+  --primary-bg-color: #071628;
   --primary-text-color: #fbfbfb;
-  --secondary-bg-color: #163352;
+  --secondary-bg-color: #0b2240;
   --accent-gray: #b8bbbd;
   --toggle-color: var(--primary-bg-color);
   --status-bg-color: #15803d;
@@ -85,10 +85,7 @@ a:focus-visible {
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(ellipse at 15% 15%, rgba(14, 165, 200, 0.16) 0%, transparent 35%),
-    radial-gradient(ellipse at 85% 80%, rgba(99, 112, 210, 0.22) 0%, transparent 32%),
-    radial-gradient(ellipse at 80% 10%, rgba(214, 58, 142, 0.32) 0%, transparent 28%),
-    radial-gradient(ellipse at 20% 85%, rgba(214, 58, 142, 0.18) 0%, transparent 25%);
+    radial-gradient(ellipse at 50% 40%, rgba(99, 112, 210, 0.22) 0%, transparent 50%);
   background-size: 300% 300%;
   animation: gradientShift 45s ease infinite;
 }
@@ -106,6 +103,7 @@ a:focus-visible {
   100% { background-position: 0% 0%; }
 }
 
+
 /* Mouse-follow gradient — three blobs driven by CSS vars set in useBackgroundEffects */
 .mouse-blob {
   position: fixed;
@@ -119,6 +117,12 @@ a:focus-visible {
       rgba(214, 58, 142, 0.2) 0%, transparent 100%),
     radial-gradient(30% 30% at calc(var(--blob3-x, 50%) * 0.3 + 5vw) calc(100vh - var(--blob3-y, 50%) * 0.4),
       rgba(14, 165, 200, 0.14) 0%, transparent 100%);
+}
+
+@media (hover: none) {
+  .mouse-blob {
+    display: none;
+  }
 }
 
 
@@ -660,6 +664,7 @@ button.toggle-box {
 }
 
 .actionBtn p {
+  font-weight: 700;
   background-image: linear-gradient(var(--primary-text-color), var(--primary-text-color));
   background-size: 0% 1px;
   background-repeat: no-repeat;
@@ -672,6 +677,7 @@ button.toggle-box {
 .actionBtn:focus-visible p {
   background-size: 100% 1px;
 }
+
 
 .actionBtn > img {
   height: 1.5em;
@@ -818,6 +824,6 @@ footer {
 
 footer p {
   font-size: 0.8rem;
-  color: var(--accent-gray);
+  color: var(--primary-text-color);
   margin: 0;
 }
