@@ -1,20 +1,22 @@
+import { useLang } from "../contexts/LangContext"
+import { content, projectsMeta } from "../data/content"
 import ProjectCard from "../components/ProjectCard"
-import data from "../data/projects.json"
 
 const Projects = () => {
-  const projects = data.projects
-
-  const projectList = projects.map((project, index) => (
-    <ProjectCard key={index} project={project} />
+  const { lang } = useLang()
+  const t = content[lang].projects
+  // Merge the language-agnostic metadata into the translated content to use in each project card
+  const projectList = t.items.map((item, index) => (
+    <ProjectCard
+      key={index}
+      project={{ ...projectsMeta.find(meta => meta.id === item.id), ...item }}
+    />
   ))
 
   return (
     <main>
-      <h1>Things I've Built.</h1>
-      <section aria-label="subheading" className="sub">
-        I like to make stuff that's fun, exciting, and helpful. Here are a few
-        things I've built recently.
-      </section>
+      <h1>{t.heading}</h1>
+      <section aria-label="subheading" className="sub">{t.subheading}</section>
       <section aria-label="featured projects" className="featured-projects">
         {/* <h2>Featured Projects</h2> */}
         <div>{projectList}</div>
