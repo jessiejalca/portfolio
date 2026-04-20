@@ -55,6 +55,30 @@ export const content = {
                 },
             ],
         },
+        nav: {
+            logoAlt: "Jessie's logo",
+            pages: ["Home", "Projects", "About"],
+            toggles: {
+                darkMode: {
+                    on: "Lights On",
+                    off: "Lights Off",
+                },
+                cursor: "Animate Cursor"
+            },
+        },
+        footer: "Designed and built with ❤️ by Jessie Jalca using React, Vite &amp; Framer Motion",
+        notFound: {
+            intros: ["Hmm", "Uh oh", "Yikes", "Huh", "Whoops", "Oops", "Welp"],
+            comments: [
+                "Nothing to see here — literally. It doesn't exist.",
+                "Looks like this page doesn't exist — or maybe it used to and I broke it.",
+                "Even I don't know what's supposed to be here.",
+                "This page took a wrong turn somewhere. Same, honestly.",
+                "This page was probably deleted in a cleanup commit.",
+                "This probably existed on main at some point."
+            ],
+            cta: "Anyway, not to be rude, but go home."
+        }
     },
     fr: {
         home: {
@@ -111,6 +135,30 @@ export const content = {
                 },
             ],
         },
+        nav: {
+            logoAlt: "Logo de Jessie",
+            pages: ["Accueil", "Projets", "À propos"],
+            toggles: {
+                darkMode: {
+                    on: "Mode Clair",
+                    off: "Mode Sombre",
+                },
+                cursor: "Animer le Curseur"
+            },
+        },
+        footer: "Conçu et réalisé avec ❤️ par Jessie Jalca à l'aide de React, Vite et Framer Motion",
+        notFound: {
+            intros: ["Hmm", "Oh non", "Aïe", "Hein", "Oups", "Mince", "Bah"],
+            comments: [
+                "Cette page n'existe pas. Elle n'a jamais existé. On passe à autre chose.",
+                "Quelqu'un a dû supprimer ça dans un moment d'enthousiasme.",
+                "Même moi, je ne sais pas ce qui devrait être ici.",
+                "Cette page s'est perdue quelque part en route. Ça arrive.",
+                "Probablement supprimée dans un commit de nettoyage. Paix à son âme.",
+                "Ça existait sûrement sur main à un moment donné."
+            ],
+            cta: "Bon. Ce n'est pas ici. Rentrez chez vous."
+        }
     }
 }
 
