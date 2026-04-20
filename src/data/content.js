@@ -70,7 +70,7 @@ export const content = {
                 cursor: "Animate Cursor"
             },
         },
-        footer: "Designed and built with ❤️ by Jessie Jalca using React, Vite &amp; Framer Motion",
+        footer: "Designed and built with ❤️ by Jessie Jalca using React, Vite and Framer Motion",
         notFound: {
             intros: ["Hmm", "Uh oh", "Yikes", "Huh", "Whoops", "Oops", "Welp"],
             comments: [
