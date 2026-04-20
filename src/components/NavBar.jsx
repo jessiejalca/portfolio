@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import { NavLink } from "react-router-dom"
 import { useLang } from "../contexts/LangContext"
 import Toggle from "./Toggle"
+import LangToggle from "./LangToggle"
 import logo from "../assets/logo.svg"
 import logoDark from "../assets/dm-logo.svg"
 import darkModeToggle from "../assets/dark-mode.svg"
@@ -78,7 +79,7 @@ const NavBar = (props) => {
             alt="Dark mode toggle"
             className="dark-mode-toggle"
           />
-          {windowWidth > 620 ? (
+          {windowWidth > 680 ? (
             <label htmlFor="dark-mode-toggle" className="toggleLabel">
               {props.darkMode ? t.toggles.darkMode.on : t.toggles.darkMode.off}
             </label>
@@ -86,6 +87,7 @@ const NavBar = (props) => {
             ""
           )}
         </button>
+        <LangToggle />
       </div>
     </header>
   )

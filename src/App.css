@@ -137,7 +137,7 @@ footer {
   padding: 76px;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 650px) {
   main {
     padding: 80px 24px 16px;
   }
@@ -283,7 +283,7 @@ nav .link:focus-visible {
   padding: 0 1.5rem;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 650px) {
   header,
   .navbar {
     display: none;
@@ -365,7 +365,7 @@ nav .link:focus-visible {
   margin: 2px 0;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 650px) {
   .bottom-nav {
     display: flex;
     align-items: center;
@@ -497,6 +497,7 @@ button.toggle-box {
   display: flex;
   align-items: center;
   gap: 8px;
+  height: 32px;
   border: 1px solid transparent;
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }

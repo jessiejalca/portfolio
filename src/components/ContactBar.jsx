@@ -1,3 +1,4 @@
+import LangToggle from "./LangToggle"
 import darkModeToggle from "../assets/dark-mode.svg"
 import darkModeToggleDark from "../assets/dm-dark-mode.svg"
 import githubLogo from "../assets/github.svg"
@@ -30,6 +31,7 @@ const ContactBar = ({ darkMode, setDarkMode }) => (
     <button className="contact-bar-item" onClick={setDarkMode} aria-label="Toggle dark mode">
       <img src={darkMode ? darkModeToggleDark : darkModeToggle} alt="" />
     </button>
+    <LangToggle className="contact-bar-item prevent-select" />
   </div>
 )
 
