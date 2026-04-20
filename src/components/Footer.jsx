@@ -1,7 +1,14 @@
-const Footer = () => (
-  <footer>
-    <p>Built with ❤️ by Jessie Jalca using React, Vite &amp; Framer Motion</p>
-  </footer>
-)
+import { useLang } from "../contexts/LangContext"
+import { content } from "../data/content.js"
+
+const Footer = () => {
+  const { lang } = useLang()
+
+  return (
+    <footer>
+      <p>{content[lang].footer}.</p>
+    </footer>
+  )
+}
 
 export default Footer
