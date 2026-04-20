@@ -59,7 +59,7 @@ const NavBar = (props) => {
         </nav>
       </div>
       <div className="settings">
-        {windowWidth > 820 ? (
+        {windowWidth > 850 ? (
           <Toggle
             name={t.toggles.cursor}
             isChecked={props.cursorStatus}

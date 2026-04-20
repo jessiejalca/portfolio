@@ -31,6 +31,7 @@ const ContactBar = ({ darkMode, setDarkMode }) => (
     <button className="contact-bar-item" onClick={setDarkMode} aria-label="Toggle dark mode">
       <img src={darkMode ? darkModeToggleDark : darkModeToggle} alt="" />
     </button>
+    <div className="contact-bar-divider" aria-hidden="true" />
     <LangToggle className="contact-bar-item prevent-select" />
   </div>
 )
