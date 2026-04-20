@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from "react"
 import { NavLink } from "react-router-dom"
+import { useLang } from "../contexts/LangContext"
 import Toggle from "./Toggle"
 import logo from "../assets/logo.svg"
 import logoDark from "../assets/dm-logo.svg"
 import darkModeToggle from "../assets/dark-mode.svg"
 import darkModeToggleDark from "../assets/dm-dark-mode.svg"
+import { content } from "../data/content.js"
 
 const NavBar = (props) => {
+  const { lang } = useLang()
+  const t = content[lang].nav
+
   // Get the window width
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const [scrolled, setScrolled] = useState(false)
@@ -36,30 +41,26 @@ const NavBar = (props) => {
         <NavLink to={"/"}>
           <img
             src={props.darkMode ? logoDark : logo}
-            alt="Jessie's logo"
+            alt={t.logoAlt}
             className="logo"
           />
         </NavLink>
         <nav role="navigation">
-          {windowWidth > 520 ? (
-            <NavLink className="link" to={"/"}>
-              Home
-            </NavLink>
-          ) : (
-            ""
-          )}
+          <NavLink className="link" to={"/"}>
+            {t.pages.home}
+          </NavLink>
           <NavLink className="link" to={"/projects"}>
-            Projects
+            {t.pages.projects}
           </NavLink>
           <NavLink className="link" to={"/about"}>
-            About
+            {t.pages.about}
           </NavLink>
         </nav>
       </div>
       <div className="settings">
-        {windowWidth > 780 ? (
+        {windowWidth > 820 ? (
           <Toggle
-            name="Animate Cursor"
+            name={t.toggles.cursor}
             isChecked={props.cursorStatus}
             onToggle={props.setCursor}
           />
@@ -79,7 +80,7 @@ const NavBar = (props) => {
           />
           {windowWidth > 620 ? (
             <label htmlFor="dark-mode-toggle" className="toggleLabel">
-              Lights {props.darkMode ? "On" : "Off"}
+              {props.darkMode ? t.toggles.darkMode.on : t.toggles.darkMode.off}
             </label>
           ) : (
             ""

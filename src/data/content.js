@@ -57,7 +57,11 @@ export const content = {
         },
         nav: {
             logoAlt: "Jessie's logo",
-            pages: ["Home", "Projects", "About"],
+            pages: {
+                home: "Home",
+                projects: "Projects",
+                about: "About"
+            },
             toggles: {
                 darkMode: {
                     on: "Lights On",
@@ -137,7 +141,11 @@ export const content = {
         },
         nav: {
             logoAlt: "Logo de Jessie",
-            pages: ["Accueil", "Projets", "À propos"],
+            pages: {
+                home: "Accueil",
+                projects: "Projets",
+                about: "À propos"
+            },
             toggles: {
                 darkMode: {
                     on: "Mode Clair",
