@@ -2,17 +2,19 @@ import { useEffect, useState } from "react"
 import { useBackgroundEffects } from "./hooks/useBackgroundEffects"
 import AnimatedCursor from "react-animated-cursor"
 import { Outlet, useLocation } from "react-router-dom"
+import { useLang } from "./contexts/LangContext"
 import { AnimatePresence, motion } from "framer-motion"
 import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
 import BottomNav from "./components/BottomNav"
 import ScrollToTop from "./components/ScrollToTop"
 import ContactBar from "./components/ContactBar"
-import "./App.css"
 import FrenchNotice from "./components/FrenchNotice"
+import "./App.css"
 
 
 function App() {
+  const { lang } = useLang()
   const location = useLocation()
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const [showCursor, setShowCursor] = useState(
@@ -79,7 +81,7 @@ function App() {
         />
       ) : null}
       <ScrollToTop />
-      <FrenchNotice />
+      {lang == 'fr' ? <FrenchNotice /> : ""}
       <NavBar
         setCursor={handleToggle}
         cursorStatus={showCursor}
