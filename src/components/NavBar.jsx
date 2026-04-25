@@ -8,6 +8,7 @@ import logoDark from "../assets/dm-logo.svg"
 import darkModeToggle from "../assets/dark-mode.svg"
 import darkModeToggleDark from "../assets/dm-dark-mode.svg"
 import { content } from "../data/content.js"
+import FrenchNotice from "./FrenchNotice.jsx"
 
 const NavBar = (props) => {
   const { lang } = useLang()

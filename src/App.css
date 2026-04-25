@@ -201,6 +201,45 @@ p {
 
 
 /* =============================================================================
+   Banner
+   ============================================================================= */
+
+.banner {
+  width: 100%;
+  background-color: color-mix(in srgb, var(--accent-periwinkle) 10%, var(--primary-bg-color));
+  border-bottom: 1px solid color-mix(in srgb, var(--accent-periwinkle) 28%, transparent);
+  text-align: center;
+  padding: 0.6rem 1rem 0.4rem;
+}
+
+.banner p {
+  font-size: 0.82rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--primary-text-color);
+  margin: 0;
+}
+
+.banner a {
+  color: var(--accent-blue);
+  font-weight: 700;
+  padding: 0;
+}
+
+.banner a:hover,
+.banner a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+@media (max-width: 650px) {
+  .banner p {
+    font-size: 0.78rem;
+  }
+}
+
+
+/* =============================================================================
    Navigation
    ============================================================================= */
 
@@ -444,12 +483,12 @@ nav .link:focus-visible {
     display: block;
   }
 
-  /* Contact bar — override to top-right row on mobile */
+  /* Contact bar — override to top-right row on mobile, offset below the banner */
   .contact-bar {
     flex-direction: row;
     bottom: auto;
     left: auto;
-    top: 16px;
+    top: 62px;
     right: 16px;
   }
 

@@ -9,6 +9,7 @@ import BottomNav from "./components/BottomNav"
 import ScrollToTop from "./components/ScrollToTop"
 import ContactBar from "./components/ContactBar"
 import "./App.css"
+import FrenchNotice from "./components/FrenchNotice"
 
 
 function App() {
@@ -78,6 +79,7 @@ function App() {
         />
       ) : null}
       <ScrollToTop />
+      <FrenchNotice />
       <NavBar
         setCursor={handleToggle}
         cursorStatus={showCursor}
